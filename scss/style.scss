@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;900&display=swap');
+@import "functions/map-deep-get.scss";
+@import "fonts/all.min";
+@import "variables.scss";
+@import "button/button.scss";
+@import "utils/colors.scss";
+@import "utils/text.scss";
+@import "utils/font-style.scss";
+@import "utils/height.scss";
+@import "utils/padding.scss";
+@import "utils/margin.scss";
+@import "paragraph/paragraph.scss";
+@import "heading/heading.scss";
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+label {
+    visibility: hidden;
+    position: absolute;
+}
+
+.ap-fullscreen {
+    background-image: url(../assets/fond_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+
+    &:before {
+        content: "";
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.04%, #000000 87.21%);
+        position: absolute;
+        bottom: 0; 
+        width: 100%; 
+        height: 526px;
+    }
+
+    &:after {
+        content: "";
+        background: linear-gradient(270.17deg, rgba(0, 0, 0, 0) -45.8%, rgba(0, 0, 0, 0.53) 101.59%);
+        position: absolute;
+        left: 0; 
+        width: 434px; 
+    }
+
+}
+
+
+
+.ap-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #0000004F;
+    height: 100vh;
+    width: 100px;
+    font-family: var(--text-font);
+    position: fixed;
+    z-index: 2;
+
+    &__nav__link {
+        text-decoration: none;
+        color:white;
+
+        &--selected {
+            color: var(--color-primary-500);
+        }
+    }
+}
+
+.ap-header__nav__li:hover {
+    background-color: white;
+}
+
+.ap-header__nav__li:hover > .ap-header__nav__link{
+    color: var(--color-primary-500);
+}
+
+.ap-header__nav__link {
+    font-size: 1.6rem;
+
+    i {
+        margin-right: 20px;
+        position: relative;
+
+    }
+}
+.ap-button {
+    i {
+        margin-right: 10px;
+    }
+}
+.ap-container {
+    z-index: 3;
+}
+.ap-flex {
+    display:flex;
+    height: 100vh;
+    align-items: center;
+    }
+.ap-stroke {
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-white);
+}
+.ap-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+}
+.ap-header__nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -72px;
+}
+
+
+@media screen and (max-width: $screen-md)  { 
+
+    .ap-header {
+        height: 77px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ap-header__nav__li { 
+        visibility: hidden;
+    }
+
+    .ap-menu-burger {
+        padding: 32px;
+        position: absolute;
+        right: 0;
+    }
+    
+    .ap-stroke-burger {
+        width: 24px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: white;
+        margin-top: 4px;
+    }
+
+    .ap-header__nav {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+    }
+    .ap-header__logo {
+        padding-left: 32px;
+        height: 40px;
+        position: absolute;
+    }
+    .ap-heading {
+        margin-bottom: 40px;
+    }
+    .ap-container {
+        padding: 32px;
+        padding-top: 109px;
+    }
+    .ap-paragraph {
+        margin-bottom: 24px;
+    }
+    .ap-row {
+        display: flex;
+        flex-direction: column;
+        width: 184px;
+    }
+    .ap-button {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: $screen-md) {
+.ap-header__logo {
+    width: 100px;
+    padding: 20px;
+}
+.ap-header__nav__ul {
+    padding-top: 64px;
+    width: 100%;
+}
+.ap-header__nav__li {
+    padding-left: 40px;
+    margin-bottom: 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.ap-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-left: 300px;
+}
+.ap-header:hover {
+    width: 300px;
+}
+.ap-header:hover label {
+    visibility: visible;
+}
+.ap-header:hover + .background {
+    background-color: RGBA(0,0,0,0.5);
+}
+
+.background {
+    position: relative;
+    z-index: -1;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.ap-header{
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+
+.ap-header{
+    transition-timing-function: ease;
+}
+.ap-button {
+    margin-top: 0;
+}
+}

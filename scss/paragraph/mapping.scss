@@ -1,0 +1,47 @@
+$paragraphcolors: (
+    primary: (
+        color: var(--color-white),
+    ),
+    secondary: (
+        color: var(--color-secondary-500),
+    ),
+    tertiaire: (
+        color: var(--color-black),
+    )    
+);
+
+$paragraph-sizes: (
+    small: (
+        font-size: var(--font-size-small),
+        font-weight: var(--font-weight-small),
+        line-height: var(--line-height-small),
+    ),
+    medium: (
+        font-size: var(--font-size-medium),
+        font-weight: var(--font-weight-regular),
+        line-height: var(--line-height-medium),
+    ),   
+    medium-thin: (
+        font-size: var(--font-size-medium),
+        font-weight: var(--font-weight-regular),
+        line-height: var(--line-height-medium),
+    ),   
+    large: (
+        font-size: var(--font-size-large),
+        font-weight: var(--font-weight-regular),
+    ),
+    light:(
+        font-size: var(--font-size-medium),
+        font-weight: var(--font-weight-light),
+        line-height: var(--line-height-medium),
+    ),
+    xs:(
+        font-size: var(--font-size-xs),
+        font-weight: var(--font-weight-regular), 
+    ),
+    extralarge:(
+        font-size: var(--font-size-extralarge),
+        font-weight: var(--font-weight-bold),
+        line-height: var(--line-height-large),
+    )
+);

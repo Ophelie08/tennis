@@ -1,0 +1,106 @@
+
+$screen-xxs: 375px;
+
+$screen-xs: 576px;
+
+$screen-sm: 768px;
+
+$screen-md: 992px;
+
+$screen-lg: 1151px;
+
+$screen-xl: 1400px;
+
+:root{
+
+    //font family
+    --text-font:'Source Sans Pro', sans-serif;
+    --heading-font:'Source Sans Pro', sans-serif;
+
+    --font-icons: "Font Awesome 6 Regular";
+    --font-icons-brands: "Font Awesome 6 Brands";
+
+    //theme color
+    --color-primary-500: #5F11DE;
+    --color-white: white;
+    --color-black: black; 
+    --color-secondary-500:#646464;
+
+    //heading H1
+    --font-size-h1: 6.4rem;
+    --font-weight-h1: 900;
+
+    //heading H2
+    --font-size-h2: 6.4rem;
+    --font-weight-h2: 600;
+
+    //heading H3
+    --font-size-h3: 4.8rem;
+    --font-weight-h3: 700;
+    --font-height-h3: 65px;
+
+    //heading H4
+    --font-size-h4: 3.6rem;
+    --font-weight-h4: 500;
+
+    //heading H5
+    --font-size-h5: 2.0rem;
+    --font-weight-h5: 600;
+
+    //pragraph small
+    --font-size-small: 1.4rem;
+    --font-weight-small: 400;
+    --line-height-small: 19px;
+
+    //paragraph xs
+    --font-size-xs: 1.2rem;
+    --font-weight-regular: 400;
+
+    //paragraph medium
+    --font-size-medium: 1.6rem;
+    --font-weight-regular: 600;
+    --line-height-medium: 20px;
+
+    //parapraph large
+    --font-size-large: 1.8rem;
+
+    //paragraph extra large
+    --font-size-extralarge: 3.2rem;
+    --font-weight-bold: 700;
+    --line-height-large: 42px;
+
+    //paragraph light
+    --font-weight-light: 300;
+
+    // button height
+    --button-height-default: 48px;
+
+
+    @media screen and (max-width: $screen-md) {
+        //heading H1
+        --font-size-h1: 3.2rem;
+        --font-weight-h1: 800;
+
+        //heading H2
+        --font-size-h2: 4.4rem;
+        --font-weight-h2: 600;
+
+        //heading H3
+        --font-size-h3: 3.2rem;
+        --font-weight-h3: 700;
+        --font-height-h3: 43px;
+
+        //heading H4
+        --font-size-h4: 2.4rem;
+        --font-weight-h4: 500;
+
+        //heading H5
+        --font-size-h5: 2.0rem;
+        --font-weight-h5: 600;
+
+        //paragraph medium
+        --font-size-medium: 1.4rem;
+        --line-height-medium: 20px;
+    }
+
+}

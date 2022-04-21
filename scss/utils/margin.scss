@@ -1,0 +1,206 @@
+// Une mixin est une directive qui permet de créer du code CSS réutilisable à travers tout un projet
+@mixin margins($size, $result, $resultUnit) {
+    .margin-top#{$size}--#{$result} { margin-top: $resultUnit; } // .margin-top-xs--8, .margin-top-xs--16, .margin-top-xs--24, ...
+    .margin-right#{$size}--#{$result} { margin-right: $resultUnit; }
+    .margin-bottom#{$size}--#{$result} { margin-bottom: $resultUnit; }
+    .margin-left#{$size}--#{$result} { margin-left: $resultUnit; }
+}
+
+
+// La boucle for va permettre d'éviter la redondance de lignes de codes
+@for $multiplicator from 0 through 10 { // la variable $multiplicator va prendre les valeurs 0 1 2 3 ... 10
+    $result: calc($multiplicator * 8); // la variable $result est le résultat de $multiplicator * 8 --> 0 * 8, 1 * 8, 2 * 8, ...
+    $resultUnit: calc(#{$multiplicator} * 8px); // la variable $resultUnit est identique à $result sauf qu'on a cette fois une unité (pixel, rem, em, ...)
+    $size: ''; // $size est la valeur de notre taille d'écran (-xs, -sm, -md, -lg, -xl, ...)
+
+    @include margins($size, $result, $resultUnit); // @include permet d'appeller la @mixin définie au dessus
+}
+
+
+@media(min-width: $screen-xl) {
+    @for $multiplicator from 0 through 10 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-xl';
+    
+        @include margins($size, $result, $resultUnit);
+    }
+}
+
+@media(min-width: $screen-lg) {
+    @for $multiplicator from 0 through 10 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-lg';
+    
+        @include margins($size, $result, $resultUnit);
+    }
+}
+
+@media(min-width: $screen-md) {
+    @for $multiplicator from 0 through 10 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-md';
+    
+        @include margins($size, $result, $resultUnit);
+    }
+}
+
+@media(min-width: $screen-sm) {
+    @for $multiplicator from 0 through 10 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-sm';
+    
+        @include margins($size, $result, $resultUnit);
+    }
+}
+
+@media(max-width: $screen-xs) {
+    @for $multiplicator from 0 through 10 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-xs';
+    
+        @include margins($size, $result, $resultUnit);
+    }
+}
+
+@media(min-width: $screen-xxs) {
+    @for $multiplicator from 0 through 10 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-xs';
+    
+        @include margins($size, $result, $resultUnit);
+    }
+}
+
+
+
+
+/* .margin-bottom--80 { 
+    margin-bottom: 80px; 
+}
+.margin-bottom--72 { 
+    margin-bottom: 72px; 
+}
+.margin-bottom--64 { 
+    margin-bottom: 64px; 
+}
+.margin-bottom--56 { 
+    margin-bottom: 56px; 
+}
+.margin-bottom--48 { 
+    margin-bottom: 48px; 
+}
+.margin-bottom--40 { 
+    margin-bottom: 40px; 
+}
+.margin-bottom--32 { 
+    margin-bottom: 32px; 
+}
+.margin-bottom--24 { 
+    margin-bottom: 24px; 
+}
+.margin-bottom--16 { 
+    margin-bottom: 16px; 
+}
+.margin-bottom--8 { 
+    margin-bottom: 8px; 
+}
+.margin-bottom--0 { 
+    margin-bottom: 0px; 
+}
+
+@media(max-width: 1151px) { 
+
+.margin-bottom-lg--80 { 
+    margin-bottom: 80px; 
+}
+.margin-bottom-lg--72 { 
+    margin-bottom: 72px; 
+}
+.margin-bottom-lg--64 { 
+    margin-bottom: 64px; 
+}
+    
+.margin-bottom-lg--56 { 
+    margin-bottom: 56px; 
+}
+.margin-bottom-lg--48 { 
+    margin-bottom: 48px; 
+}
+.margin-bottom-lg--40 { 
+    margin-bottom: 40px; 
+} 
+.margin-bottom-lg--32 { 
+    margin-bottom: 32px; 
+}
+.margin-bottom-lg--24 { 
+    margin-bottom: 24px; 
+}
+.margin-bottom-lg--16 { 
+    margin-bottom: 16px; 
+}
+.margin-bottom-lg--8 { 
+    margin-bottom: 8px; 
+}
+.margin-bottom-lg--0 { 
+    margin-bottom: 0px; }
+}
+
+@media(max-width: 768px) { 
+
+    .margin-bottom-sm--80 { 
+        margin-bottom: 80px; 
+    }
+    .margin-bottom-sm--72 { 
+        margin-bottom: 72px; 
+    }
+    .margin-bottom-sm--64 { 
+        margin-bottom: 64px; 
+    }    
+    .margin-bottom-sm--56 { 
+        margin-bottom: 56px; 
+    }
+    .margin-bottom-sm--48 { 
+        margin-bottom: 48px; 
+    }
+    .margin-bottom-sm--40 { 
+        margin-bottom: 40px; 
+    } 
+    .margin-bottom-sm--32 { 
+        margin-bottom: 32px; 
+    }
+    .margin-bottom-sm--24 { 
+        margin-bottom: 24px; 
+    }
+    .margin-bottom-sm--16 { 
+        margin-bottom: 16px; 
+    }
+    .margin-bottom-sm--8 { 
+        margin-bottom: 8px; 
+    }
+    .margin-bottom-sm--0 { 
+        margin-bottom: 0px; 
+    }
+    .padding-left-sm--40 {
+        padding-left: 40px;
+    }
+    .padding-right-sm--40 {
+        padding-right: 40px;
+    }
+    .padding-left-sm--24 {
+        padding-left: 24px;
+    }
+    .padding-right-sm--24 {
+        padding-right: 24px;
+    }
+    .padding-bottom-sm--0 {
+        padding-bottom: 0;
+    }
+    }
+
+ */

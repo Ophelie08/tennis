@@ -1,0 +1,69 @@
+// Une mixin est une directive qui permet de créer du code CSS réutilisable à travers tout un projet
+@mixin paddings($size, $result, $resultUnit) {
+    .padding-top#{$size}--#{$result} { padding-top: $resultUnit; } // .margin-top-xs--8, .margin-top-xs--16, .margin-top-xs--24, ...
+    .padding-right#{$size}--#{$result} { padding-right: $resultUnit; }
+    .padding-bottom#{$size}--#{$result} { padding-bottom: $resultUnit; }
+    .padding-left#{$size}--#{$result} { padding-left: $resultUnit; }
+}
+
+
+// La boucle for va permettre d'éviter la redondance de lignes de codes
+@for $multiplicator from 0 through 20 { // la variable $multiplicator va prendre les valeurs 0 1 2 3 ... 10
+    $result: calc($multiplicator * 8); // la variable $result est le résultat de $multiplicator * 8 --> 0 * 8, 1 * 8, 2 * 8, ...
+    $resultUnit: calc(#{$multiplicator} * 8px); // la variable $resultUnit est identique à $result sauf qu'on a cette fois une unité (pixel, rem, em, ...)
+    $size: ''; // $size est la valeur de notre taille d'écran (-xs, -sm, -md, -lg, -xl, ...)
+
+    @include paddings($size, $result, $resultUnit); // @include permet d'appeller la @mixin définie au dessus
+}
+
+
+@media(min-width: $screen-xl) {
+    @for $multiplicator from 0 through 20 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-xl';
+    
+        @include paddings($size, $result, $resultUnit);
+    }
+}
+
+@media(min-width: $screen-lg) {
+    @for $multiplicator from 0 through 20 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-lg';
+    
+        @include paddings($size, $result, $resultUnit);
+    }
+}
+
+@media(min-width: $screen-md) {
+    @for $multiplicator from 0 through 20 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-md';
+    
+        @include paddings($size, $result, $resultUnit);
+    }
+}
+
+@media(min-width: $screen-sm) {
+    @for $multiplicator from 0 through 20 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-sm';
+    
+        @include paddings($size, $result, $resultUnit);
+    }
+}
+
+@media(min-width: $screen-xs) {
+    @for $multiplicator from 0 through 20 {
+        $result: calc($multiplicator * 8);
+        $resultUnit: calc(#{$multiplicator} * 8px);
+        $size: '-xs';
+    
+        @include paddings($size, $result, $resultUnit);
+    }
+}
+

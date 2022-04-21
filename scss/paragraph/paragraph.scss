@@ -1,0 +1,19 @@
+@import 'mapping';
+
+.ap-paragraph {   
+    font-family: var(--text-font);
+
+    @each $key, $value in $paragraphcolors {
+        &.ap-paragraph--#{$key} {
+            color: map-get($value, 'color');
+        }
+    }
+  
+    @each $key, $value in $paragraph-sizes {
+        &.ap-paragraph--#{$key} {
+            font-size: map-get($value, 'font-size');
+            font-weight: map-get($value, 'font-weight');
+            line-height: map-get($value, 'line-height');
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import 'mapping';
+
+.ap-button {
+
+    border: none;
+    border-radius: 100px;
+
+    @each $key, $value in $button-colors {
+        &.ap-button--#{$key} {
+            color: map-deep-get($value, 'color');
+            background-color: map-get($value, 'background-color');
+            background: map-get($value, 'background');
+
+            &:hover {
+                color: map-deep-get($value, 'hover', 'color');
+                background-color: map-deep-get($value, 'hover', 'background-color');
+            } 
+        }
+    }
+    
+    @each $key, $value in $button-sizes {
+        &.ap-button--#{$key} {
+            height: map-get($value, 'height');
+            font-size: map-get($value, 'font-size');
+            font-weight: map-get($value, 'font-weight');
+            padding-left: map-get($value, 'padding-left');
+            padding-right: map-get($value, 'padding-right');
+        }
+    } 
+
+}
+
