@@ -1,4 +1,3 @@
-
 $screen-xxs: 375px;
 
 $screen-xs: 576px;
@@ -11,56 +10,51 @@ $screen-lg: 1151px;
 
 $screen-xl: 1400px;
 
-:root{
+:root {
 
-    //font family
-    --text-font:'Source Sans Pro', sans-serif;
-    --heading-font:'Source Sans Pro', sans-serif;
+  //font family
+  --text-font: "Source Sans Pro", sans-serif;
+  --heading-font: "Source Sans Pro", sans-serif;
+  --font-icons: "Font Awesome 6 Regular";
+  --font-icons-brands: "Font Awesome 6 Brands";
 
-    --font-icons: "Font Awesome 6 Regular";
-    --font-icons-brands: "Font Awesome 6 Brands";
+  //theme color
+  --color-primary-500: #5f11de;
+  --color-white: white;
+  --color-black: black;
+  --color-secondary-500: #646464;
 
-    //theme color
-    --color-primary-500: #5F11DE;
-    --color-white: white;
-    --color-black: black; 
-    --color-secondary-500:#646464;
+  //heading H1
+  --font-size-h1: 6.4rem;
+  --font-weight-h1: 900;
 
+  //heading H2
+  //heading H3
+  //heading H4
+  //heading H5
+
+  //paragraph medium
+  --font-size-medium: 1.6rem;
+  --font-weight-regular: 600;
+  --line-height-medium: 20px;
+
+  //pragraph small
+  //paragraph xs
+  //parapraph large
+  //paragraph extra large
+  //paragraph light
+
+  // button height
+  --button-height-default: 48px;
+
+  @media screen and (max-width: $screen-lg) {
     //heading H1
-    --font-size-h1: 6.4rem;
+    --font-size-h1: 4rem;
     --font-weight-h1: 900;
 
-    //heading H2
-    //heading H3
-    //heading H4
-    //heading H5
-
-    //paragraph medium
-    --font-size-medium: 1.6rem;
-    --font-weight-regular: 600;
-    --line-height-medium: 20px;
-
-    //pragraph small
-    //paragraph xs
-    //parapraph large
-    //paragraph extra large
-    //paragraph light
-
-
-    // button height
-    --button-height-default: 48px;
-
-
-    @media screen and (max-width: $screen-lg) {
-        //heading H1
-        --font-size-h1: 4.0rem;
-        --font-weight-h1: 900;
-
-        //paragraph small
-        --font-size-medium: 1.4rem;
-        --font-weight-regular: 400;
-        --line-height-medium: 17px;
-
-    }
-
+    //paragraph small
+    --font-size-medium: 1.4rem;
+    --font-weight-regular: 400;
+    --line-height-medium: 17px;
+  }
 }

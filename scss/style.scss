@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap");
 @import "functions/map-deep-get.scss";
 @import "fonts/all.min";
 @import "variables.scss";
@@ -15,55 +15,51 @@
 @import "container/container.scss";
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 .ap-fullscreen {
-    background-image: url(../assets/fond_.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: relative;
+  background-image: url("../assets/fond_.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
 
-    &:before {
-        content: "";
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.04%, #000000 87.21%);
-        position: absolute;
-        bottom: 0; 
-        width: 100%; 
-        height: 526px;
-    }
+  &::before {
+    content: "";
+    background: linear-gradient(180deg, rgb(0 0 0 / 0%) 41.04%, #000 87.21%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 526px;
+  }
 
-    &:after {
-        content: "";
-        background: linear-gradient(270.17deg, rgba(0, 0, 0, 0) -45.8%, rgba(0, 0, 0, 0.53) 101.59%);
-        position: absolute;
-        left: 0; 
-        max-width: 434px; 
-        top: 0;
-        height: 100%;
-    }
-}
-@media screen and (max-width: $screen-lg)  { 
-
-    .ap-fullscreen:before {
-        content: "";
-        background: #00000073;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
+  &::after {
+    content: "";
+    background: linear-gradient(270.17deg, rgb(0 0 0 / 0%) -45.8%, rgb(0 0 0 / 53%) 101.59%);
+    position: absolute;
+    left: 0;
+    max-width: 434px;
+    top: 0;
+    height: 100%;
+  }
 }
 
-
-
+@media screen and (max-width: $screen-lg) {
+  .ap-fullscreen::before {
+    content: "";
+    background: #00000073;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

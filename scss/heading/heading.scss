@@ -1,19 +1,19 @@
-@import 'mapping';
+@import "mapping";
 
 .ap-heading {
-    font-family: var(--heading-font);
-    
-    @each $key, $value in $heading-sizes {
-        &.ap-heading--#{$key} {
-            font-size: map-get($value, 'font-size');
-            font-weight: map-get($value, 'font-weight');
-            line-height: map-get($value, 'line-height');
-        }
-    } 
+  font-family: var(--heading-font);
 
-    @each $key, $value in $headingcolors {
-        &.ap-heading--#{$key} {
-            color: map-get($value, 'color');
-        }
+  @each $key, $value in $heading-sizes {
+    &.ap-heading--#{$key} {
+      font-size: map-get($value, "font-size");
+      font-weight: map-get($value, "font-weight");
+      line-height: map-get($value, "line-height");
     }
+  }
+
+  @each $key, $value in $headingcolors {
+    &.ap-heading--#{$key} {
+      color: map-get($value, "color");
+    }
+  }
 }
