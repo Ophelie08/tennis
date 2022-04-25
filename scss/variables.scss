@@ -48,7 +48,7 @@ $screen-xl: 1400px;
     --font-weight-h5: 600;
 
     //pragraph small
-    --font-size-small: 1.4rem;
+    --font-size-small: 1.6rem;
     --font-weight-small: 400;
     --line-height-small: 19px;
 
@@ -76,10 +76,10 @@ $screen-xl: 1400px;
     --button-height-default: 48px;
 
 
-    @media screen and (max-width: $screen-md) {
+    @media screen and (max-width: $screen-lg) {
         //heading H1
-        --font-size-h1: 3.2rem;
-        --font-weight-h1: 800;
+        --font-size-h1: 4.0rem;
+        --font-weight-h1: 900;
 
         //heading H2
         --font-size-h2: 4.4rem;
@@ -98,9 +98,12 @@ $screen-xl: 1400px;
         --font-size-h5: 2.0rem;
         --font-weight-h5: 600;
 
-        //paragraph medium
-        --font-size-medium: 1.4rem;
-        --line-height-medium: 20px;
+        //paragraph small
+
+        --font-size-small: 1.4rem;
+        --font-weight-small: 400;
+        --line-height-small: 17px;
+
     }
 
 }

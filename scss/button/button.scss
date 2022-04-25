@@ -1,9 +1,14 @@
 @import 'mapping';
 
 .ap-button {
-
+  
     border: none;
     border-radius: 100px;
+
+    cursor: pointer;
+    i {
+        margin-right: 10px;
+    }
 
     @each $key, $value in $button-colors {
         &.ap-button--#{$key} {
@@ -27,6 +32,19 @@
             padding-right: map-get($value, 'padding-right');
         }
     } 
-
 }
+
+@media screen and (max-width: $screen-lg)  { 
+    .ap-button {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: $screen-lg) {
+    .ap-button {
+        margin-top: 0;
+    }
+}
+
+
 

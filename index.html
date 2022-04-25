@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header class="ap-header"> 
         <img class="ap-header__logo" src="assets/WAOP_LOGO.svg" alt="logo waop"/>
+        <div class="ap-menu-burger" id="burger">
+            <div class="ap-stroke-burger ap-stroke-burger--first-child"></div>
+            <div class="ap-stroke-burger ap-stroke-burger--second-child"></div>
+            <div class="ap-stroke-burger ap-stroke-burger--third-child"></div>
+        </div>
+
         <nav class="ap-header__nav">
             <ul class="ap-header__nav__ul">
-                <li class="ap-header__nav__li"><a class="ap-header__nav__link ap-header__nav__link--selected" href=""><i class="fa-solid fa-home fa-lg"></i><label class="accueil">Accueil</label></a></li>
-                <li class="ap-header__nav__li"><a class="ap-header__nav__link" href=""><i class="fa-solid fa-table-columns fa-lg"></i><label class="Tableau">Tableau</label></a></li>
-                <li class="ap-header__nav__li"><a class="ap-header__nav__link" href=""><i class="fa-solid fa-book fa-lg"></i><label class="Histoire">Histoire</label></a></li>
-                <li class="ap-header__nav__li"><a class="ap-header__nav__link" href=""><i class="fa-solid fa-users fa-lg"></i><label class="Joueuses">Joueuses</label></a></li>
-                <li class="ap-header__nav__li"><a class="ap-header__nav__link" href=""><i class="fa-solid fa-list fa-lg"></i><label class="Programme">Programme</label></a></li>
-                <li class="ap-header__nav__li"><a class="ap-header__nav__link" href=""><i class="fa-brands fa-youtube fa-lg"></i><label class="Matchs">Matchs en live</label></a></li>
+                <li class="ap-header__nav__li"><a class="ap-header__nav__link ap-header__nav__link--selected" href=""><i class="fa-solid fa-home fa-lg"></i><div class="accueil">Accueil</div></a></li>
+                <li class="ap-header__nav__li"><a class="ap-header__nav__link" href=""><i class="fa-solid fa-table-columns fa-lg"></i><div class="tableau">Tableau</div></a></li>
+                <li class="ap-header__nav__li"><a class="ap-header__nav__link" href=""><i class="fa-solid fa-book fa-lg"></i><div class="histoire">Histoire</div></a></li>
+                <li class="ap-header__nav__li"><a class="ap-header__nav__link" href=""><i class="fa-solid fa-users fa-lg"></i><div class="joueuses">Joueuses</div></a></li>
+                <li class="ap-header__nav__li"><a class="ap-header__nav__link" href=""><i class="fa-solid fa-list fa-lg"></i><div class="programme">Programme</div></a></li>
+                <li class="ap-header__nav__li"><a class="ap-header__nav__link" href=""><i class="fa-brands fa-youtube fa-lg"></i><div class="matchs">Matchs en live</div></a></li>
             </ul>
-            <div class="ap-menu-burger">
-                <div class="ap-stroke-burger"></div>
-                <div class="ap-stroke-burger"></div>
-                <div class="ap-stroke-burger"></div>
-            </div>
         </nav>
     </header>
     <main>
@@ -31,13 +34,13 @@
             <div class="ap-flex">
                 <div class="ap-container">
                     <h1 class="ap-heading ap-heading--h1 ap-heading--primary">Waves Open 57</h1>
-                    <p class="ap-paragraph ap-paragraph--primary ap-paragraph--medium margin-top--24">Le Waves Open 57 est devenu le tournoi féminin le plus important du Circuit<br> National des Grands Tournois.</p>
-                    <div class="ap-stroke margin-top--24"></div>
+                    <p class="ap-paragraph ap-paragraph--primary ap-paragraph--small">Le Waves Open 57 est devenu le tournoi féminin le plus important du Circuit<br> National des Grands Tournois.</p>
+                    <div class="ap-stroke"></div>
                     <p class="ap-paragraph ap-paragraph--primary ap-paragraph--medium margin-top--24">24 Juin 2022 - 3 Juillet 2022</p>
                     <p class="ap-paragraph ap-paragraph--primary ap-paragraph--medium">Entrée gratuite -  Moulins-Lès-Metz</p>
                     <div class="ap-row">
-                    <button class="ap-button ap-button--primary-500 ap-button--default margin-right--16"><i class="fa-solid fa-table-columns fa-lg"></i>Voir le tableau</button>
-                    <button class="ap-button ap-button--primary-500 ap-button--default margin-top-xs--16"><i class="fa-brands fa-youtube fa-lg"></i>Regarder le live</button>
+                    <button class="ap-button ap-button--primary-500 ap-button--default margin-top--24 margin-top-lg--0 margin-right-lg--16"><i class="fa-solid fa-table-columns fa-lg"></i>Voir le tableau</button>
+                    <button class="ap-button ap-button--primary-500 ap-button--default margin-top--24 margin-top-lg--0"><i class="fa-brands fa-youtube fa-lg"></i>Regarder le live</button>
                     </div>
                 </div>
             </div>
