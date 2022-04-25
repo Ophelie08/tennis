@@ -9,6 +9,9 @@
     i {
         margin-right: 10px;
     }
+    &:hover {
+    transition: 0.3S ease;
+    }
 
     @each $key, $value in $button-colors {
         &.ap-button--#{$key} {

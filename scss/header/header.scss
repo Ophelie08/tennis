@@ -27,6 +27,8 @@
             text-decoration: none;
             color:white;
             font-size: 1.6rem;
+            width: 100%;
+            height: 100%;
     
             > div {
                 visibility: hidden;
@@ -62,49 +64,57 @@
         width: 100%;
         height: 64px;
 
-        .ap-stroke-burger--third-child {
-            transform: rotate(0) translate(0);
-            transition: .3s ease;
-        }
-        .ap-stroke-burger--first-child {
-            transform: rotate(0) translate(0);
-            transition: .3s ease;
-        }
-        .ap-stroke-burger--second-child {
-            transform: translateX(0);
-            transition: transform .3s ease, opacity ease .2s;
-            opacity: 1;
-        }
+        .ap-stroke-burger{
 
-        &--show-nav {
-
-            .ap-stroke-burger--third-child {
-                transform: rotate(45deg) translate(-5px, -5px);
+            &:nth-child(3) {
+                transform: rotate(0) translate(0);
                 transition: .3s ease;
             }
-            .ap-stroke-burger--first-child {
-                transform: rotate(-45deg) translate(-6px, 6px);
-                transition: .3s ease
+            &:first-child{
+                transform: rotate(0) translate(0);
+                transition: .3s ease;
             }
-    
-            .ap-stroke-burger--second-child {
+            &:nth-child(2) {
                 transform: translateX(0);
                 transition: transform .3s ease, opacity ease .2s;
-                opacity: 0;
+                opacity: 1;
+            }
+
+        }
+        
+        &--show-nav {
+
+            .ap-stroke-burger {
+
+                &:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -5px);
+                transition: .3s ease;
+                }
+                &:first-child {
+                    transform: rotate(-45deg) translate(-6px, 6px);
+                    transition: .3s ease
+                }
+                &:nth-child(2) {
+                    transform: translateX(0);
+                    transition: transform .3s ease, opacity ease .2s;
+                    opacity: 0;
+                }
             }
     
-            .ap-header__nav {
+            .ap-header {
+            
+                &__nav {
                 margin-top: 0;
                 height: 100vh;
                 transform: scale(1);
                 background-color: var(--color-black);
                 opacity: 1;
-            }
-    
-            .ap-header__nav .ap-header__nav__li{
-                display: flex;
-            }
-    
+
+                    &__li {
+                    display: flex;
+                    }
+                }
+            }    
         }
 
         &__nav {
@@ -120,46 +130,41 @@
     
             &__li {
                 display: none;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 32px;
+                height: 56px;
+
+                & i {
+                    display: none;
+                }
     
                 &:hover {
                     background-color: transparent;
                 }
             }
-        }
-   
 
-        &__nav__li {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding-bottom: 32px;
-            height: 56px;
+            &__link div {
+                visibility: visible;
+                padding-bottom: 32px;
+                position: static;
+            }
 
-            & i {
-                display: none;
+            &__ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__link {
+                font-size: 2.0rem;
+                font-weight: 400;
             }
         }
 
-        &__nav__link div {
-            visibility: visible;
-            padding-bottom: 32px;
-            position: static;
-        }
-    
-        &__nav__ul {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        &__nav__link {
-            font-size: 2.0rem;
-            font-weight: 400;
-        }
-        
         &__logo {
             padding-left: 32px;
             height: 40px;
@@ -167,8 +172,8 @@
             top: 14px;
             z-index: 1;
         }
-    
     }
+    
     .ap-menu-burger {
         padding: 18px;
         position: absolute;
@@ -226,6 +231,7 @@
         height: 40px;
         display: flex;
         align-items: center;
+        padding-top: 10px;
         }
 
         &:hover {

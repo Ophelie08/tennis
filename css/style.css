@@ -8115,6 +8115,8 @@
   text-decoration: none;
   color: white;
   font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
 }
 .ap-header__nav__link > div {
   visibility: hidden;
@@ -8143,28 +8145,28 @@
     width: 100%;
     height: 64px;
   }
-  .ap-header .ap-stroke-burger--third-child {
+  .ap-header .ap-stroke-burger:nth-child(3) {
     transform: rotate(0) translate(0);
     transition: 0.3s ease;
   }
-  .ap-header .ap-stroke-burger--first-child {
+  .ap-header .ap-stroke-burger:first-child {
     transform: rotate(0) translate(0);
     transition: 0.3s ease;
   }
-  .ap-header .ap-stroke-burger--second-child {
+  .ap-header .ap-stroke-burger:nth-child(2) {
     transform: translateX(0);
     transition: transform 0.3s ease, opacity ease 0.2s;
     opacity: 1;
   }
-  .ap-header--show-nav .ap-stroke-burger--third-child {
+  .ap-header--show-nav .ap-stroke-burger:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -5px);
     transition: 0.3s ease;
   }
-  .ap-header--show-nav .ap-stroke-burger--first-child {
+  .ap-header--show-nav .ap-stroke-burger:first-child {
     transform: rotate(-45deg) translate(-6px, 6px);
     transition: 0.3s ease;
   }
-  .ap-header--show-nav .ap-stroke-burger--second-child {
+  .ap-header--show-nav .ap-stroke-burger:nth-child(2) {
     transform: translateX(0);
     transition: transform 0.3s ease, opacity ease 0.2s;
     opacity: 0;
@@ -8176,7 +8178,7 @@
     background-color: var(--color-black);
     opacity: 1;
   }
-  .ap-header--show-nav .ap-header__nav .ap-header__nav__li {
+  .ap-header--show-nav .ap-header__nav__li {
     display: flex;
   }
   .ap-header__nav {
@@ -8192,12 +8194,6 @@
   }
   .ap-header__nav__li {
     display: none;
-  }
-  .ap-header__nav__li:hover {
-    background-color: transparent;
-  }
-  .ap-header__nav__li {
-    width: 100%;
     display: flex;
     justify-content: center;
     padding-bottom: 32px;
@@ -8205,6 +8201,9 @@
   }
   .ap-header__nav__li i {
     display: none;
+  }
+  .ap-header__nav__li:hover {
+    background-color: transparent;
   }
   .ap-header__nav__link div {
     visibility: visible;
@@ -8284,6 +8283,7 @@
     height: 40px;
     display: flex;
     align-items: center;
+    padding-top: 10px;
   }
   .ap-header:hover {
     width: 300px;
@@ -8306,6 +8306,9 @@
 }
 .ap-button i {
   margin-right: 10px;
+}
+.ap-button:hover {
+  transition: 0.3S ease;
 }
 .ap-button.ap-button--primary-500 {
   color: var(--color-white);
@@ -8395,10 +8398,6 @@
 
 .font-style-italic {
   font-style: italic;
-}
-
-.height-full {
-  height: 78vh;
 }
 
 .padding-top--0 {
