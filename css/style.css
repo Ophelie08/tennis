@@ -8035,14 +8035,14 @@
   unicode-range: u+f041, u+f047, u+f065-f066, u+f07d-f07e, u+f080, u+f08b, u+f08e, u+f090, u+f09a, u+f0ac, u+f0ae, u+f0b2, u+f0d0, u+f0d6, u+f0e4, u+f0ec, u+f10a-f10b, u+f123, u+f13e, u+f148-f149, u+f14c, u+f156, u+f15e, u+f160-f161, u+f163, u+f175-f178, u+f195, u+f1f8, u+f219, u+f250, u+f252, u+f27a;
 }
 :root {
-  --text-font:"Source Sans Pro", sans-serif;
-  --heading-font:"Source Sans Pro", sans-serif;
+  --text-font: "Source Sans Pro", sans-serif;
+  --heading-font: "Source Sans Pro", sans-serif;
   --font-icons: "Font Awesome 6 Regular";
   --font-icons-brands: "Font Awesome 6 Brands";
-  --color-primary-500: #5F11DE;
+  --color-primary-500: #5f11de;
   --color-white: white;
   --color-black: black;
-  --color-secondary-500:#646464;
+  --color-secondary-500: #646464;
   --font-size-h1: 6.4rem;
   --font-weight-h1: 900;
   --font-size-medium: 1.6rem;
@@ -8052,7 +8052,7 @@
 }
 @media screen and (max-width: 1151px) {
   :root {
-    --font-size-h1: 4.0rem;
+    --font-size-h1: 4rem;
     --font-weight-h1: 900;
     --font-size-medium: 1.4rem;
     --font-weight-regular: 400;
@@ -8063,7 +8063,7 @@
 .ap-header {
   display: flex;
   flex-direction: column;
-  background-color: #0000004F;
+  background-color: #0000004f;
   height: 100vh;
   width: 72px;
   font-family: var(--text-font);
@@ -8224,7 +8224,8 @@
     margin-bottom: 16px;
   }
 
-  .ap-heading, .ap-paragraph {
+  .ap-heading,
+.ap-paragraph {
     text-align: center;
   }
 
@@ -8274,14 +8275,14 @@
 .ap-button {
   border: none;
   border-radius: 100px;
-  transition: 0.3S ease;
+  transition: 0.3s ease;
   cursor: pointer;
 }
 .ap-button i {
   margin-right: 10px;
 }
 .ap-button:hover {
-  transition: 0.3S ease;
+  transition: 0.3s ease;
 }
 .ap-button.ap-button--primary-500 {
   color: var(--color-white);
@@ -8371,6 +8372,10 @@
 
 .font-style-italic {
   font-style: italic;
+}
+
+.height-full {
+  height: 78vh;
 }
 
 .padding-top--0 {
@@ -11632,111 +11637,111 @@
     margin-left: calc(10 * 8px);
   }
 }
-/* .margin-bottom--80 { 
-    margin-bottom: 80px; 
+/* .margin-bottom--80 {
+    margin-bottom: 80px;
 }
-.margin-bottom--72 { 
-    margin-bottom: 72px; 
+.margin-bottom--72 {
+    margin-bottom: 72px;
 }
-.margin-bottom--64 { 
-    margin-bottom: 64px; 
+.margin-bottom--64 {
+    margin-bottom: 64px;
 }
-.margin-bottom--56 { 
-    margin-bottom: 56px; 
+.margin-bottom--56 {
+    margin-bottom: 56px;
 }
-.margin-bottom--48 { 
-    margin-bottom: 48px; 
+.margin-bottom--48 {
+    margin-bottom: 48px;
 }
-.margin-bottom--40 { 
-    margin-bottom: 40px; 
+.margin-bottom--40 {
+    margin-bottom: 40px;
 }
-.margin-bottom--32 { 
-    margin-bottom: 32px; 
+.margin-bottom--32 {
+    margin-bottom: 32px;
 }
-.margin-bottom--24 { 
-    margin-bottom: 24px; 
+.margin-bottom--24 {
+    margin-bottom: 24px;
 }
-.margin-bottom--16 { 
-    margin-bottom: 16px; 
+.margin-bottom--16 {
+    margin-bottom: 16px;
 }
-.margin-bottom--8 { 
-    margin-bottom: 8px; 
+.margin-bottom--8 {
+    margin-bottom: 8px;
 }
-.margin-bottom--0 { 
-    margin-bottom: 0px; 
-}
-
-@media(max-width: 1151px) { 
-
-.margin-bottom-lg--80 { 
-    margin-bottom: 80px; 
-}
-.margin-bottom-lg--72 { 
-    margin-bottom: 72px; 
-}
-.margin-bottom-lg--64 { 
-    margin-bottom: 64px; 
+.margin-bottom--0 {
+    margin-bottom: 0px;
 }
 
-.margin-bottom-lg--56 { 
-    margin-bottom: 56px; 
+@media(max-width: 1151px) {
+
+.margin-bottom-lg--80 {
+    margin-bottom: 80px;
 }
-.margin-bottom-lg--48 { 
-    margin-bottom: 48px; 
+.margin-bottom-lg--72 {
+    margin-bottom: 72px;
 }
-.margin-bottom-lg--40 { 
-    margin-bottom: 40px; 
-} 
-.margin-bottom-lg--32 { 
-    margin-bottom: 32px; 
+.margin-bottom-lg--64 {
+    margin-bottom: 64px;
 }
-.margin-bottom-lg--24 { 
-    margin-bottom: 24px; 
+
+.margin-bottom-lg--56 {
+    margin-bottom: 56px;
 }
-.margin-bottom-lg--16 { 
-    margin-bottom: 16px; 
+.margin-bottom-lg--48 {
+    margin-bottom: 48px;
 }
-.margin-bottom-lg--8 { 
-    margin-bottom: 8px; 
+.margin-bottom-lg--40 {
+    margin-bottom: 40px;
 }
-.margin-bottom-lg--0 { 
+.margin-bottom-lg--32 {
+    margin-bottom: 32px;
+}
+.margin-bottom-lg--24 {
+    margin-bottom: 24px;
+}
+.margin-bottom-lg--16 {
+    margin-bottom: 16px;
+}
+.margin-bottom-lg--8 {
+    margin-bottom: 8px;
+}
+.margin-bottom-lg--0 {
     margin-bottom: 0px; }
 }
 
-@media(max-width: 768px) { 
+@media(max-width: 768px) {
 
-    .margin-bottom-sm--80 { 
-        margin-bottom: 80px; 
+    .margin-bottom-sm--80 {
+        margin-bottom: 80px;
     }
-    .margin-bottom-sm--72 { 
-        margin-bottom: 72px; 
+    .margin-bottom-sm--72 {
+        margin-bottom: 72px;
     }
-    .margin-bottom-sm--64 { 
-        margin-bottom: 64px; 
-    }    
-    .margin-bottom-sm--56 { 
-        margin-bottom: 56px; 
+    .margin-bottom-sm--64 {
+        margin-bottom: 64px;
     }
-    .margin-bottom-sm--48 { 
-        margin-bottom: 48px; 
+    .margin-bottom-sm--56 {
+        margin-bottom: 56px;
     }
-    .margin-bottom-sm--40 { 
-        margin-bottom: 40px; 
-    } 
-    .margin-bottom-sm--32 { 
-        margin-bottom: 32px; 
+    .margin-bottom-sm--48 {
+        margin-bottom: 48px;
     }
-    .margin-bottom-sm--24 { 
-        margin-bottom: 24px; 
+    .margin-bottom-sm--40 {
+        margin-bottom: 40px;
     }
-    .margin-bottom-sm--16 { 
-        margin-bottom: 16px; 
+    .margin-bottom-sm--32 {
+        margin-bottom: 32px;
     }
-    .margin-bottom-sm--8 { 
-        margin-bottom: 8px; 
+    .margin-bottom-sm--24 {
+        margin-bottom: 24px;
     }
-    .margin-bottom-sm--0 { 
-        margin-bottom: 0px; 
+    .margin-bottom-sm--16 {
+        margin-bottom: 16px;
+    }
+    .margin-bottom-sm--8 {
+        margin-bottom: 8px;
+    }
+    .margin-bottom-sm--0 {
+        margin-bottom: 0px;
     }
     .padding-left-sm--40 {
         padding-left: 40px;
@@ -11857,10 +11862,7 @@
 }
 @media screen and (min-width: 1151px) {
   .ap-container {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding: 64px;
     margin-left: 154px;
   }
 
@@ -11882,22 +11884,22 @@ html {
 }
 
 .ap-fullscreen {
-  background-image: url(../assets/fond_.jpg);
+  background-image: url("../assets/fond_.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   position: relative;
 }
-.ap-fullscreen:before {
+.ap-fullscreen::before {
   content: "";
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.04%, #000000 87.21%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.04%, #000 87.21%);
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 526px;
 }
-.ap-fullscreen:after {
+.ap-fullscreen::after {
   content: "";
   background: linear-gradient(270.17deg, rgba(0, 0, 0, 0) -45.8%, rgba(0, 0, 0, 0.53) 101.59%);
   position: absolute;
@@ -11908,7 +11910,7 @@ html {
 }
 
 @media screen and (max-width: 1151px) {
-  .ap-fullscreen:before {
+  .ap-fullscreen::before {
     content: "";
     background: #00000073;
     position: absolute;

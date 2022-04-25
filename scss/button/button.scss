@@ -18,7 +18,6 @@
     &.ap-button--#{$key} {
       color: map-deep-get($value, "color");
       background-color: map-get($value, "background-color");
-      background: map-get($value, "background");
 
       &:hover {
         color: map-deep-get($value, "hover", "color");
