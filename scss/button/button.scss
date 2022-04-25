@@ -6,13 +6,14 @@
     border-radius: 100px;
     transition: 0.3S ease;
     cursor: pointer;
-    
-        i {
-            margin-right: 10px;
-        }
-        &:hover {
-            transition: 0.3S ease;
-        }
+
+    i {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        transition: 0.3S ease;
+    }
 
     @each $key, $value in $button-colors {
         &.ap-button--#{$key} {
