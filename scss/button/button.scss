@@ -1,54 +1,51 @@
-@import 'mapping';
+@import "mapping";
 
 .ap-button {
-  
-    border: none;
-    border-radius: 100px;
-    transition: 0.3S ease;
+  border: none;
+  border-radius: 100px;
+  transition: 0.3s ease;
+  cursor: pointer;
 
-        cursor: pointer;
-        i {
-            margin-right: 10px;
-        }
-        &:hover {
-            transition: 0.3S ease;
-        }
+  i {
+    margin-right: 10px;
+  }
 
-    @each $key, $value in $button-colors {
-        &.ap-button--#{$key} {
-            color: map-deep-get($value, 'color');
-            background-color: map-get($value, 'background-color');
-            background: map-get($value, 'background');
+  &:hover {
+    transition: 0.3s ease;
+  }
 
-            &:hover {
-                color: map-deep-get($value, 'hover', 'color');
-                background-color: map-deep-get($value, 'hover', 'background-color');
-            } 
-        }
+  @each $key, $value in $button-colors {
+    &.ap-button--#{$key} {
+      color: map-deep-get($value, "color");
+      background-color: map-get($value, "background-color");
+      background: map-get($value, "background");
+
+      &:hover {
+        color: map-deep-get($value, "hover", "color");
+        background-color: map-deep-get($value, "hover", "background-color");
+      }
     }
-    
-    @each $key, $value in $button-sizes {
-        &.ap-button--#{$key} {
-            height: map-get($value, 'height');
-            font-size: map-get($value, 'font-size');
-            font-weight: map-get($value, 'font-weight');
-            padding-left: map-get($value, 'padding-left');
-            padding-right: map-get($value, 'padding-right');
-        }
-    } 
+  }
+
+  @each $key, $value in $button-sizes {
+    &.ap-button--#{$key} {
+      height: map-get($value, "height");
+      font-size: map-get($value, "font-size");
+      font-weight: map-get($value, "font-weight");
+      padding-left: map-get($value, "padding-left");
+      padding-right: map-get($value, "padding-right");
+    }
+  }
 }
 
-@media screen and (max-width: $screen-lg)  { 
-    .ap-button {
-        margin-right: 0;
-    }
+@media screen and (max-width: $screen-lg) {
+  .ap-button {
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: $screen-lg) {
-    .ap-button {
-        margin-top: 0;
-    }
+  .ap-button {
+    margin-top: 0;
+  }
 }
-
-
-

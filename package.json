@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "lint": "stylelint --fix \"scss/**/*.scss\" --custom-syntax postcss-scss"
+  },
+  "devDependencies": {
+    "postcss-scss": "^4.0.4",
+    "stylelint": "^14.7.1",
+    "stylelint-config-standard": "^25.0.0"
+  }
+}
