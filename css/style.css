@@ -8302,6 +8302,7 @@
 .ap-button {
   border: none;
   border-radius: 100px;
+  transition: 0.3S ease;
   cursor: pointer;
 }
 .ap-button i {

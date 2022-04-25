@@ -23,17 +23,17 @@
 }
 
 @media screen and (min-width: $screen-lg) {
-.ap-container {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    padding-left: 64px;
-    padding-right: 64px;
-    margin-left: 154px;
-}
+    .ap-container {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 64px;
+        padding-right: 64px;
+        margin-left: 154px;
+    }
 
-.ap-row {
-    display: flex;
-    flex-direction: row;
-    margin-top: 24px;
-}
+    .ap-row {
+        display: flex;
+        flex-direction: row;
+        margin-top: 24px;
+    }
 }

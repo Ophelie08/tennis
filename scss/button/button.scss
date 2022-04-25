@@ -4,14 +4,15 @@
   
     border: none;
     border-radius: 100px;
-
-    cursor: pointer;
-    i {
-        margin-right: 10px;
-    }
-    &:hover {
     transition: 0.3S ease;
-    }
+
+        cursor: pointer;
+        i {
+            margin-right: 10px;
+        }
+        &:hover {
+            transition: 0.3S ease;
+        }
 
     @each $key, $value in $button-colors {
         &.ap-button--#{$key} {
