@@ -87,8 +87,8 @@
             .ap-stroke-burger {
 
                 &:nth-child(3) {
-                    transform: rotate(45deg) translate(-5px, -5px);
-                    transition: .3s ease;
+                transform: rotate(45deg) translate(-5px, -5px);
+                transition: .3s ease;
                 }
                 &:first-child {
                     transform: rotate(-45deg) translate(-6px, 6px);
@@ -213,29 +213,29 @@
         transition-duration: 0.5s;
         transition-timing-function: ease;
         
-            &__logo {
-                width: 70px;
-                padding-top: 60px;
-                transition-property: margin-left;
-                transition-duration: 0.5s;
-            }
+        &__logo {
+            width: 70px;
+            padding-top: 60px;
+            transition-property: margin-left;
+            transition-duration: 0.5s;
+        }
 
-            &__nav__ul {
-                padding-top: 64px;
-                width: 100%;
-            }
+        &__nav__ul {
+            padding-top: 64px;
+            width: 100%;
+        }
 
-            &__nav__li {
-                padding-left: 24px;
-                margin-bottom: 16px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                padding-top: 10px;
-            }
+        &__nav__li {
+            padding-left: 24px;
+            margin-bottom: 16px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+        }
 
-    &:hover {
-        width: 300px;
+        &:hover {
+            width: 300px;
 
             .ap-header__logo {
                 margin-left: 24px;
