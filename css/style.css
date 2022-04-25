@@ -8295,6 +8295,9 @@
     visibility: visible;
     display: inline-block;
   }
+  .ap-header:hover .ap-header__nav__li--selected {
+    background-color: var(--color-white);
+  }
 }
 .ap-button {
   border: none;

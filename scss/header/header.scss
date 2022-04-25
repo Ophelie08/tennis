@@ -239,6 +239,10 @@
                 visibility: visible;
                 display: inline-block;
             }
+
+            .ap-header__nav__li--selected {
+                background-color: var(--color-white);
+            }
         }
     }
 }
