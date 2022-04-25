@@ -2,7 +2,14 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "color-no-invalid-hex": true,
-    "at-rule-no-unknown": false,
-    "function-no-unknown": false
+    "at-rule-no-unknown": null,
+    "function-no-unknown": null,
+    "max-line-length": null,
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+    "indentation": [
+      2, { "baseIndentLevel": 0 }
+    ],
+    "max-empty-lines": 1
   }
 }
