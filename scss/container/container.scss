@@ -1,4 +1,4 @@
-.ap-container {
+.ap-container__fullscreen {
   z-index: 3;
 }
 
@@ -8,8 +8,23 @@
   align-items: center;
 }
 
+.ap-container {
+    padding: 80px 160px 80px 160px;
+}
+
+.ap-row--add {
+    justify-content: center;
+}
+.ap-container__article--img {
+    margin-right: 32px;
+
+    &:nth-child(3) {
+    margin-right: 0;
+    }
+}
+
 @media screen and (max-width: $screen-lg) {
-  .ap-container {
+  .ap-container__fullscreen {
     padding: 40px;
     padding-top: 109px;
     width: 100%;
@@ -22,7 +37,7 @@
 }
 
 @media screen and (min-width: $screen-lg) {
-  .ap-container {
+  .ap-container__fullscreen {
     padding: 64px;
     margin-left: 154px;
   }
