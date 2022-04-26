@@ -8364,6 +8364,19 @@ body.show-nav .ap-header__nav {
   opacity: 1;
   pointer-events: all;
 }
+body.show-nav .ap-burger__line:first-child {
+  transform: rotate(-45deg) translate(-45%);
+  transition: 0.3s ease;
+}
+body.show-nav .ap-burger__line:nth-child(2) {
+  transform: translateX(0);
+  transition: transform 0.3s ease, opacity ease 0.2s;
+  opacity: 0;
+}
+body.show-nav .ap-burger__line:nth-child(3) {
+  transform: rotate(45deg) translate(-45%);
+  transition: 0.3s ease;
+}
 
 .ap-button {
   border: none;
@@ -11998,7 +12011,7 @@ body.show-nav .ap-header__nav {
   background: linear-gradient(90deg, black 0%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
   left: 0;
-  width: 434px;
+  width: 100%;
   top: 0;
   height: 100%;
   z-index: -1;
