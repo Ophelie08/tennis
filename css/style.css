@@ -8183,6 +8183,7 @@ table {
   --font-weight-regular: 600;
   --line-height-medium: 20px;
   --button-height-default: 48px;
+  --container-width: 1120px;
 }
 @media screen and (max-width: 1151px) {
   :root {
@@ -8392,14 +8393,23 @@ body.show-nav .ap-header__nav {
   padding-right: 24px;
 }
 
-@media screen and (max-width: 1151px) {
-  .ap-button {
-    margin-right: 0;
-  }
+.ap-buttons-group {
+  display: flex;
+  flex-direction: column;
 }
-@media screen and (min-width: 1151px) {
-  .ap-button {
+.ap-buttons-group .ap-button:not(:first-child) {
+  margin-top: 2.4rem;
+}
+
+@media (min-width: 1151px) {
+  .ap-buttons-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .ap-buttons-group .ap-button:not(:first-child) {
     margin-top: 0;
+    margin-left: 1.6rem;
   }
 }
 .color--primary-500 {
@@ -11931,49 +11941,53 @@ body.show-nav .ap-header__nav {
 }
 
 .ap-container {
-  z-index: 3;
+  max-width: 1120px;
+  margin-inline: auto;
+  width: 100%;
+  padding: 0 3.2rem;
 }
 
-.ap-flex {
+.ap-section {
+  padding: 8rem 0;
+}
+
+.ap-grid {
   display: flex;
-  height: 100vh;
-  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -3.2rem;
+}
+.ap-grid__column {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 3.2rem;
+}
+.ap-grid__column--4 {
+  flex: 0 0 auto;
+  width: 33.3333%;
+}
+@media (min-width: 992px) {
+  .ap-grid__column--md--4 {
+    flex: 0 0 auto;
+    width: 33.3333%;
+  }
 }
 
-@media screen and (max-width: 1151px) {
-  .ap-container {
-    padding: 40px;
-    padding-top: 109px;
-    width: 100%;
-  }
-
-  .ap-row {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 1151px) {
-  .ap-container {
-    padding: 64px;
-    margin-left: 154px;
-  }
-
-  .ap-row {
-    display: flex;
-    flex-direction: row;
-    margin-top: 24px;
-  }
-}
 .ap-fullscreen {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 .ap-fullscreen::before {
   content: "";
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.04%, #000 87.21%);
+  z-index: -1;
+  background: linear-gradient(0, var(--color-black) 0, rgba(255, 255, 255, 0) 100%);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -11987,6 +12001,7 @@ body.show-nav .ap-header__nav {
   width: 434px;
   top: 0;
   height: 100%;
+  z-index: -1;
 }
 
 .ap-stroke {

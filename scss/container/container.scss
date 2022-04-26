@@ -1,35 +1,6 @@
 .ap-container {
-  z-index: 3;
-}
-
-.ap-flex {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-}
-
-@media screen and (max-width: $screen-lg) {
-  .ap-container {
-    padding: 40px;
-    padding-top: 109px;
-    width: 100%;
-  }
-
-  .ap-row {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: $screen-lg) {
-  .ap-container {
-    padding: 64px;
-    margin-left: 154px;
-  }
-
-  .ap-row {
-    display: flex;
-    flex-direction: row;
-    margin-top: 24px;
-  }
+  max-width: 1120px;
+  margin-inline: auto;
+  width: 100%;
+  padding: 0 3.2rem;
 }

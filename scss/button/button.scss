@@ -37,14 +37,24 @@
   }
 }
 
-@media screen and (max-width: $screen-lg) {
-  .ap-button {
-    margin-right: 0;
+.ap-buttons-group {
+  display: flex;
+  flex-direction: column;
+
+  .ap-button:not(:first-child) {
+    margin-top: 2.4rem;
   }
 }
 
-@media screen and (min-width: $screen-lg) {
-  .ap-button {
-    margin-top: 0;
+@media(min-width: $screen-lg) {
+  .ap-buttons-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .ap-button:not(:first-child) {
+      margin-top: 0;
+      margin-left: 1.6rem;
+    }
   }
 }
