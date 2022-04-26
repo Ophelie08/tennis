@@ -12010,13 +12010,16 @@ body.show-nav .ap-burger__line:nth-child(3) {
 }
 
 @media screen and (max-width: 1151px) {
-  .ap-fullscreen::before {
+  .ap-fullscreen:before {
     content: "";
     background: #00000073;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100%;
+  }
+  .ap-fullscreen:after {
+    width: 100%;
   }
 
   .ap-heading {
