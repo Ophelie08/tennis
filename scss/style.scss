@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap");
-@import "functions/map-deep-get.scss";
+@import "reset";
+@import "functions/map-deep-get";
 @import "fonts/all.min";
-@import "variables.scss";
-@import "header/header.scss";
-@import "button/button.scss";
-@import "utils/colors.scss";
-@import "utils/text.scss";
-@import "utils/font-style.scss";
-@import "utils/height.scss";
-@import "utils/padding.scss";
-@import "utils/margin.scss";
-@import "paragraph/paragraph.scss";
-@import "heading/heading.scss";
-@import "container/container.scss";
+@import "variables";
+@import "header/header";
+@import "button/button";
+@import "utils/colors";
+@import "utils/text";
+@import "utils/font-style";
+@import "utils/height";
+@import "utils/padding";
+@import "utils/margin";
+@import "paragraph/paragraph";
+@import "heading/heading";
+@import "container/container";
+@import "fullscreen/fullscreen";
 
 * {
   box-sizing: border-box;
@@ -22,44 +24,5 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
-}
-
-.ap-fullscreen {
-  background-image: url("../assets/fond_.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: relative;
-
-  &::before {
-    content: "";
-    background: linear-gradient(180deg, rgb(0 0 0 / 0%) 41.04%, #000 87.21%);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 526px;
-  }
-
-  &::after {
-    content: "";
-    background: linear-gradient(270.17deg, rgb(0 0 0 / 0%) -45.8%, rgb(0 0 0 / 53%) 101.59%);
-    position: absolute;
-    left: 0;
-    max-width: 434px;
-    top: 0;
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: $screen-lg) {
-  .ap-fullscreen::before {
-    content: "";
-    background: #00000073;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-  }
+  font-family: var(--text-font);
 }

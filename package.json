@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "lint": "stylelint --fix \"scss/**/*.scss\" --custom-syntax postcss-scss"
+    "sass:watch": "sass --watch scss/style.scss css/style.css",
+    "sass:lint": "stylelint --fix \"scss/**/*.scss\" --custom-syntax postcss-scss"
   },
   "devDependencies": {
     "postcss-scss": "^4.0.4",
