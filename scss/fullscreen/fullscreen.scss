@@ -4,10 +4,16 @@
   background-position: center;
   height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
 
   &::before {
     content: "";
-    background: linear-gradient(180deg, rgb(0 0 0 / 0%) 41.04%, #000 87.21%);
+    z-index: -1;
+    background: linear-gradient(0, var(--color-black) 0, rgb(255 255 255 / 0%) 100%);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -22,6 +28,7 @@
     width: 100%;
     top: 0;
     height: 100%;
+    z-index: -1;
   }
 }
 

@@ -50,6 +50,8 @@ $screen-xl: 1400px;
   // button height
   --button-height-default: 48px;
 
+  --container-width: 1120px;
+
   @media screen and (max-width: $screen-lg) {
     //heading H1
     --font-size-h1: 4rem;
