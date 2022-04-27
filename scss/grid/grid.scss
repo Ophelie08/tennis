@@ -1,7 +1,8 @@
 .ap-grid {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 -3.2rem;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
 
   &__column {
     flex-shrink: 0;
@@ -15,10 +16,11 @@
       width: 33.3333%;
     }
   }
-  &__article {
+  &__text {
+    max-width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
 
   // Une fois qu'on arrive à 992px...
@@ -29,8 +31,14 @@
       flex: 0 0 auto;
       width: 33.3333%;
     }
-    &__article {
-      display: block;
+
+    &__text {
+      max-width: 492px;
     }
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -3.2rem;
+    flex-direction: row;
   }
 }

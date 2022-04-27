@@ -3,15 +3,17 @@
 @import "functions/map-deep-get";
 @import "fonts/all.min";
 @import "variables";
+@import "utils/padding";
+@import "utils/margin";
 @import "header/header";
 @import "button/button";
+@import "article/article.scss";
 @import "grid/grid";
+@import "banner/banner.scss";
 @import "utils/colors";
 @import "utils/text";
 @import "utils/font-style";
 @import "utils/height";
-@import "utils/padding";
-@import "utils/margin";
 @import "paragraph/paragraph";
 @import "heading/heading";
 @import "container/container";
@@ -27,4 +29,8 @@
 html {
   font-size: 62.5%;
   font-family: var(--text-font);
+}
+
+img {
+  max-width: 100%;
 }
