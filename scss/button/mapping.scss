@@ -17,4 +17,12 @@ $button-sizes: (
     font-size: 1.4rem,
     font-weight: 600,
   ),
+
+  small: (
+    height: var(--button-height-small),
+    padding-left: 24px,
+    padding-right: 24px,
+    font-size: 1.4rem,
+    font-weight: 600,
+  ),
 );

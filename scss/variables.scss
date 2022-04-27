@@ -21,6 +21,7 @@ $screen-xl: 1400px;
   //theme color
   --color-primary-500: #e8b533;
   --color-secondary-500: #646464;
+  --color-secondary-400: #BEBEBE;
   --color-white: white;
   --color-black: black;
 
@@ -28,27 +29,36 @@ $screen-xl: 1400px;
   --font-size-h1: 6.4rem;
   --font-weight-h1: 900;
 
-    //heading H3
-    --font-size-h3: 3.2rem;
-    --font-weight-h3: 700;
+  //heading H3
+  --font-size-h3: 3.2rem;
+  --font-weight-h3: 700;
+
+  //heading H5
+  --font-size-h5: 1.6rem;
+  --font-weight-h5: 600;
 
   //heading H2
   //heading H4
-  //heading H5
+
 
   //paragraph medium
   --font-size-medium: 1.6rem;
   --font-weight-regular: 600;
   --line-height-medium: 20px;
 
-  //pragraph small
   //paragraph xs
+  --font-size-xs: 1.2rem;
+  --font-weight-xs: 400;
+  --line-height-xs: 16px;
+
+  //pragraph small
   //parapraph large
   //paragraph extra large
   //paragraph light
 
   // button height
   --button-height-default: 48px;
+  --button-height-small: 40px;
 
   --container-width: 1120px;
 

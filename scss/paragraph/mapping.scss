@@ -3,7 +3,7 @@ $paragraphcolors: (
     color: var(--color-white),
   ),
   secondary: (
-    color: var(--color-secondary-500),
+    color: var(--color-secondary-400),
   ),
   tertiaire: (
     color: var(--color-black),
@@ -37,7 +37,8 @@ $paragraph-sizes: (
   ),
   xs:(
     font-size: var(--font-size-xs),
-    font-weight: var(--font-weight-regular),
+    font-weight: var(--font-weight-xs),
+    line-height: var(--line-height-xs),
   ),
   extralarge:(
     font-size: var(--font-size-extralarge),

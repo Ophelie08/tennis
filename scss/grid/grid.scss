@@ -15,6 +15,11 @@
       width: 33.3333%;
     }
   }
+  &__article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   // Une fois qu'on arrive à 992px...
   @media(min-width: $screen-md) {
@@ -23,6 +28,9 @@
     &__column--md--4 {
       flex: 0 0 auto;
       width: 33.3333%;
+    }
+    &__article {
+      display: block;
     }
   }
 }
