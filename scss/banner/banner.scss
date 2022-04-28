@@ -2,17 +2,18 @@
     display: none;
 }
 
-  .banner--img--mobile {
+.banner--img--mobile {
     display: block;
     width: 100%;
-    }
+}
 
-    @media(min-width: $screen-md) {
-        .banner--img--mobile {
+@media(min-width: $screen-md) {
+    
+    .banner--img--mobile {
         display: none;
-        }
-        .banner--img {
-            display: block;
-            width: 100%;
-        }
     }
+    .banner--img {
+        display: block;
+        width: 100%;
+    }
+}
