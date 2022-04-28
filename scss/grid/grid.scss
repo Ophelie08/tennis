@@ -16,6 +16,7 @@
       width: 33.3333%;
     }
   }
+
   &__text {
     max-width: 100%;
     display: flex;
@@ -24,7 +25,7 @@
   }
 
   // Une fois qu'on arrive à 992px...
-  @media(min-width: $screen-md) {
+  @media (min-width: $screen-md) {
     // Cette classe va avoir pour effet de transformer les colonnes qui étaient initiallement à 100% en 33.3333%
     // Donc de 0px à 991px nos colonnes vont faire 100% de large et à partir de 992px alors les colonnes passent à 33.3333%
     &__column--md--4 {
