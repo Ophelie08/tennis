@@ -9,7 +9,6 @@
   justify-content: center;
   z-index: 1;
 
-
   &::before {
     content: "";
     z-index: -1;
@@ -41,7 +40,7 @@
 
 @media screen and (max-width: $screen-md) {
   .ap-fullscreen {
-    &:before {
+    &::before {
       content: "";
       background: #00000073;
       position: absolute;
@@ -50,7 +49,7 @@
       height: 100%;
     }
 
-    &:after {
+    &::after {
       width: 100%;
     }
   }

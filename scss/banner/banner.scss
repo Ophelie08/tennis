@@ -1,10 +1,21 @@
 .banner--img {
-    display: none;
+  display: none;
 }
 
 .banner--img--mobile {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: $screen-md) {
+  .banner--img--mobile {
+    display: none;
+  }
+
+  .banner--img {
     display: block;
     width: 100%;
+  }
 }
 
 .banner--img--filter {

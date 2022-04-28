@@ -1,9 +1,12 @@
 {
   "scripts": {
     "sass:watch": "sass --watch scss/style.scss css/style.css",
-    "sass:lint": "stylelint --fix \"scss/**/*.scss\" --custom-syntax postcss-scss"
+    "lint:html": "npx linthtml ./*.html",
+    "lint:sass": "stylelint --fix \"scss/**/*.scss\" --custom-syntax postcss-scss",
+    "lint": "npm run lint:sass && npm run lint:html"
   },
   "devDependencies": {
+    "@linthtml/linthtml": "^0.8.6",
     "postcss-scss": "^4.0.4",
     "stylelint": "^14.7.1",
     "stylelint-config-standard": "^25.0.0"

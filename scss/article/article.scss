@@ -1,13 +1,11 @@
-
 .ap-article {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  
-    @media(min-width: $screen-md) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-        & {
-        display: block;
-        }
+  @media (min-width: $screen-md) {
+    & {
+      display: block;
     }
+  }
 }
