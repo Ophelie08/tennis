@@ -9,6 +9,10 @@
     width: 100%; // Par défault, toutes les colonnes que je vais placer vont faire 100% de large
     max-width: 100%;
     padding: 0 3.2rem;
+  
+    &--img {
+      border-radius: 16px;
+    }
 
     // Sauf si j'utilise une classe modifier
     &--4 {
@@ -42,3 +46,4 @@
     flex-direction: row;
   }
 }
+
