@@ -1,0 +1,36 @@
+.ap-logo__partenaire {
+    margin-right: 6px;
+}
+
+.ap-logo-partenaire {
+    width: 200px;
+    margin: auto;
+    padding-left: 10px;
+}
+  
+.ap-logo-social-network {
+    display: flex;
+    justify-content: center;
+}
+  
+.link-ap {
+    color: #c42821;
+    text-decoration: none;
+}
+  
+@media(min-width: $screen-md) {
+
+    .ap-logo-social-network {
+      display: flex;
+      justify-content: left;
+    }
+
+    .ap-logo__partenaire {
+        margin-right: 40px;
+    }
+
+    .ap-logo-partenaire {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
