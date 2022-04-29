@@ -2,10 +2,10 @@
     width: 200px;
     margin: auto;
     padding-left: 10px;
+}
 
-    &__partenaire {
-        margin-right: 6px;
-    }
+.ap-logo__partenaire {
+    margin-right: 6px;
 }
   
 .ap-logo-social-network {
@@ -31,9 +31,10 @@
     .ap-logo-partenaire {
         width: 100%;
         padding-left: 0px;
-
-        &__partenaire {
-            margin-right: 40px;
-        }
     }
+
+    .ap-logo__partenaire {
+        margin-right: 40px;
+    }
+    
 }
