@@ -45,25 +45,20 @@ $screen-xl: 1400px;
 
 
 
-  //paragraph medium
-  --font-size-medium: 1.6rem;
-  --font-weight-regular: 600;
-  --line-height-medium: 20px;
+  //paragraph md
+  --font-size-md: 1.6rem;
+  --font-weight-md: 600;
+  --line-height-md: 20px;
 
   //paragraph xs
   --font-size-xs: 1.2rem;
   --font-weight-xs: 400;
   --line-height-xs: 16px;
 
-  //pragraph small
-  --font-size-small: 1.4rem;
-  --font-weight-small: 600;
-  --line-height-small: 20px;
-
-    //paragraph light
-    --font-size-light: 1.0rem;
-    --font-weight-light: 400;
-    --line-height-light: 20px;
+  //pragraph sm
+  --font-size-sm: 1.4rem;
+  --font-weight-sm: 600;
+  --line-height-sm: 20px;
 
   //parapraph large
   //paragraph extra large
@@ -71,7 +66,7 @@ $screen-xl: 1400px;
 
   // button height
   --button-height-default: 48px;
-  --button-height-small: 40px;
+  --button-height-sm: 40px;
 
   --container-width: 1120px;
 
@@ -81,14 +76,14 @@ $screen-xl: 1400px;
     --font-weight-h1: 900;
 
     //paragraph medium
-    --font-size-medium: 1.4rem;
-    --font-weight-regular: 400;
-    --line-height-medium: 17px;
+    //--font-size-medium: 1.4rem;
+    //--font-weight-regular: 400;
+    //--line-height-medium: 17px;
 
     //pragraph small
-    --font-size-small: 1.2rem;
-    --font-weight-small: 600;
-    --line-height-small: 20px;
+    //--font-size-small: 1.2rem;
+    //--font-weight-small: 600;
+    //--line-height-small: 20px;
 
       //heading H4
     --font-size-h4: 1.8rem;

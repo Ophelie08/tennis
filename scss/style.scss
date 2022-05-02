@@ -18,6 +18,7 @@
 @import "heading/heading";
 @import "container/container";
 @import "section/section";
+@import "link/link.scss";
 @import "fullscreen/fullscreen";
 @import "footer/footer.scss";
 
@@ -34,4 +35,8 @@ html {
 
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
