@@ -1,0 +1,27 @@
+$fullscreen-colors: (
+  "black": (
+    before: (
+      background: var(--color-filter-before-black),
+    ),
+    after: (
+      background: var(--color-filter-after-black),
+    )
+  ),
+  secondary-700: (
+    before: (
+      background: var(--color-filter-before-secondary-700),
+    ),
+    after: (
+      background: var(--color-filter-after-secondary-700),
+    )
+  )
+);
+
+$fullscreen-sizes: (
+  default: (
+    height: 100vh,
+  ),
+  sm: (
+    height: 505px,
+  ),
+);
