@@ -95,9 +95,8 @@
     }
 
     display: flex;
-    flex-wrap: wrap;
     margin: 0 -3.2rem;
-    flex-direction: row;
+    flex-flow: wrap row;
   }
 }
 

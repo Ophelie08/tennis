@@ -1,12 +1,11 @@
 $fullscreen-colors: (
-  'black': (
+  "black": (
     before: (
       background: var(--color-filter-before-black),
     ),
     after: (
       background: var(--color-filter-after-black),
     )
-
   ),
   secondary-700: (
     before: (

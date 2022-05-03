@@ -22,17 +22,12 @@ $screen-xl: 1400px;
   --color-primary-500: #e87caa;
   --color-secondary-500: #646464;
   --color-secondary-400: #bebebe;
-  --color-secondary-700: #0c262b;
   --color-white: white;
   --color-black: black;
   --color-filter-before-secondary-700: linear-gradient(180deg, rgb(12 38 43 / 0%) 0%, #0c262b 100%);
-  --color-filter-after-secondary-700: linear-gradient(270.17deg, rgba(0, 0, 0, 0) 22.37%, rgba(0, 0, 0, 0.53) 101.59%);
-  
-
-
-  --color-filter-before-black: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.04%, #000000 87.21%);
-  --color-filter-after-black: linear-gradient(270.42deg, rgba(0, 0, 0, 0.37) 50.94%, rgba(0, 0, 0, 0.53) 99.65%);
-
+  --color-filter-after-secondary-700: linear-gradient(270.17deg, rgb(0 0 0 / 0%) 22.37%, rgb(0 0 0 / 53%) 101.59%);
+  --color-filter-before-black: linear-gradient(180deg, rgb(0 0 0 / 0%) 41.04%, #000 87.21%);
+  --color-filter-after-black: linear-gradient(270.42deg, rgb(0 0 0 / 37%) 50.94%, rgb(0 0 0 / 53%) 99.65%);
 
   //heading H1
   --font-size-h1: 6.4rem;

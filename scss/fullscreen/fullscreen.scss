@@ -32,7 +32,7 @@
   &__logo {
     display: flex;
     justify-content: flex-start;
-  
+
     img {
       height: 103px;
     }
@@ -40,13 +40,12 @@
 
   @each $key, $value in $fullscreen-colors {
     &.ap-fullscreen--#{$key} {
-
       &::before {
-        background:  map-deep-get($value, "before", "background");
+        background: map-deep-get($value, "before", "background");
       }
-    
+
       &::after {
-        background:  map-deep-get($value, "after", "background");
+        background: map-deep-get($value, "after", "background");
       }
     }
   }
@@ -56,7 +55,6 @@
       height: map-get($value, "height");
     }
   }
-  
 }
 
 .ap-stroke {
@@ -95,5 +93,3 @@
     justify-content: center;
   }
 }
-
-
