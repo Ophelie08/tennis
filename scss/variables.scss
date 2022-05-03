@@ -19,14 +19,19 @@ $screen-xl: 1400px;
   --font-icons-brands: "Font Awesome 6 Brands";
 
   //theme color
-  --color-primary-500: #E87CAA;
+  --color-primary-500: #e87caa;
   --color-secondary-500: #646464;
-  --color-secondary-400: #BEBEBE;
-  --color-secondary-700: #0C262B;
+  --color-secondary-400: #bebebe;
+  --color-secondary-700: #0c262b;
   --color-white: white;
   --color-black: black;
+  --color-filter-before-secondary-700: linear-gradient(180deg, rgb(12 38 43 / 0%) 0%, #0c262b 100%);
+  --color-filter-after-secondary-700: linear-gradient(270.17deg, rgba(0, 0, 0, 0) 22.37%, rgba(0, 0, 0, 0.53) 101.59%);
+  
 
-  --color-filter: linear-gradient(180deg, rgba(12, 38, 43, 0) 0%, #0C262B 100%);
+
+  --color-filter-before-black: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.04%, #000000 87.21%);
+  --color-filter-after-black: linear-gradient(270.42deg, rgba(0, 0, 0, 0.37) 50.94%, rgba(0, 0, 0, 0.53) 99.65%);
 
 
   //heading H1
@@ -47,8 +52,6 @@ $screen-xl: 1400px;
 
   //heading H2
 
-
-
   //paragraph md
   --font-size-md: 1.6rem;
   --font-weight-md: 600;
@@ -67,11 +70,9 @@ $screen-xl: 1400px;
   //parapraph large
   //paragraph extra large
 
-
   // button height
   --button-height-default: 48px;
   --button-height-sm: 40px;
-
   --container-width: 1120px;
 
   @media screen and (max-width: $screen-lg) {
@@ -89,7 +90,7 @@ $screen-xl: 1400px;
     //--font-weight-small: 600;
     //--line-height-small: 20px;
 
-      //heading H4
+    //heading H4
     --font-size-h4: 1.8rem;
     --font-weight-h4: 700;
   }

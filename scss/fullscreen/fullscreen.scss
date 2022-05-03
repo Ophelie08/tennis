@@ -9,12 +9,10 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-  height: 100vh;
 
   &::before {
     content: "";
     z-index: -1;
-    background: linear-gradient(0deg, var(--color-black) 0, rgb(255 255 255 / 0%) 100%);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -23,7 +21,6 @@
 
   &::after {
     content: "";
-    background: linear-gradient(90deg, rgb(0 0 0 / 100%) 0%, rgb(255 255 255 / 0%) 20%);
     position: absolute;
     left: 0;
     width: 100%;
@@ -31,6 +28,35 @@
     height: 100%;
     z-index: -1;
   }
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+  
+    img {
+      height: 103px;
+    }
+  }
+
+  @each $key, $value in $fullscreen-colors {
+    &.ap-fullscreen--#{$key} {
+
+      &::before {
+        background:  map-deep-get($value, "before", "background");
+      }
+    
+      &::after {
+        background:  map-deep-get($value, "after", "background");
+      }
+    }
+  }
+
+  @each $key, $value in $fullscreen-sizes {
+    &.ap-fullscreen--#{$key} {
+      height: map-get($value, "height");
+    }
+  }
+  
 }
 
 .ap-stroke {
@@ -40,24 +66,10 @@
   margin-top: 24px;
 }
 
-.ap-fullscrenn__logo {
-  display: flex;
-  justify-content: flex-start;
-
-  img {
-    height: 103px;
-  }
-}
-
-.fullscreen-md {
-  height: 505px;
-}
-
 @media screen and (max-width: $screen-md) {
   .ap-fullscreen {
     &::before {
       content: "";
-   
       position: absolute;
       bottom: 0;
       width: 100%;
@@ -77,19 +89,11 @@
   .ap-stroke {
     margin: 24px auto 0;
   }
+
   .ap-fullscrenn__logo {
     display: flex;
     justify-content: center;
   }
 }
 
-.ap-fullscreen {
 
-@each $key, $value in $fullscreen-colors {
-  &.ap-fullscreen--#{$key} {
-    background: map-deep-get($value, "background");
-
-  }
-}
-
-}
