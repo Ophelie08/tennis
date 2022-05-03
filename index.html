@@ -4,64 +4,15 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="/css/style.css" />
 
-		<script type="text/javascript" src="js/script.js"></script>
+		<script type="module" src="/components/header/header.js"></script>
+		<script type="text/javascript" src="/js/script.js"></script>
 		<title>Document</title>
 	</head>
 
 	<body>
-		<header class="ap-header">
-			<div class="ap-header__bar">
-				<img class="ap-header__logo" src="assets/images/logo.svg" alt="logo waop" />
-				<div class="ap-burger" id="burger">
-					<div class="ap-burger__line"></div>
-					<div class="ap-burger__line"></div>
-					<div class="ap-burger__line"></div>
-				</div>
-			</div>
-
-			<nav class="ap-header__nav">
-				<ul class="ap-header__nav__ul">
-					<li class="ap-header__nav__li ap-header__nav__li--selected">
-						<a class="ap-header__nav__link ap-header__nav__link--selected" href="#">
-							<i class="fa-solid fa-home fa-lg"></i>
-							<span>Accueil</span>
-						</a>
-					</li>
-					<li class="ap-header__nav__li">
-						<a class="ap-header__nav__link" href="#">
-							<i class="fa-solid fa-table-columns fa-lg"></i>
-							<span>Tableau</span>
-						</a>
-					</li>
-					<li class="ap-header__nav__li">
-						<a class="ap-header__nav__link" href="#">
-							<i class="fa-solid fa-book fa-lg"></i>
-							<span>Histoire</span>
-						</a>
-					</li>
-					<li class="ap-header__nav__li">
-						<a class="ap-header__nav__link" href="#">
-							<i class="fa-solid fa-users fa-lg"></i>
-							<span>Joueuses</span>
-						</a>
-					</li>
-					<li class="ap-header__nav__li">
-						<a class="ap-header__nav__link" href="#">
-							<i class="fa-solid fa-list fa-lg"></i>
-							<span>Programme</span>
-						</a>
-					</li>
-					<li class="ap-header__nav__li">
-						<a class="ap-header__nav__link" href="#">
-							<i class="fa-brands fa-youtube fa-lg"></i>
-							<span>Matchs en live</span>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<ap-header></ap-header>
 
 		<main>
 			<div class="ap-fullscreen" style="background-image: url('assets/images/fond_.jpg')">
