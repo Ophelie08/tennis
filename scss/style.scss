@@ -7,9 +7,9 @@
 @import "utils/margin";
 @import "header/header";
 @import "button/button";
-@import "article/article.scss";
+@import "article/article";
 @import "grid/grid";
-@import "banner/banner.scss";
+@import "banner/banner";
 @import "utils/colors";
 @import "utils/text";
 @import "utils/font-style";
@@ -18,9 +18,10 @@
 @import "heading/heading";
 @import "container/container";
 @import "section/section";
-@import "link/link.scss";
+@import "link/link";
 @import "fullscreen/fullscreen";
-@import "footer/footer.scss";
+@import "player-card/player-card";
+@import "footer/footer";
 
 * {
   box-sizing: border-box;
@@ -39,4 +40,9 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.ap-drapeau {
+  border-radius: 100px;
+  margin-right: 8px;
 }
