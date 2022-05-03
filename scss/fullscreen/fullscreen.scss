@@ -1,13 +1,15 @@
+@import "mapping";
+
 .ap-fullscreen {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
+  height: 100vh;
 
   &::before {
     content: "";
@@ -38,11 +40,24 @@
   margin-top: 24px;
 }
 
+.ap-fullscrenn__logo {
+  display: flex;
+  justify-content: flex-start;
+
+  img {
+    height: 103px;
+  }
+}
+
+.fullscreen-md {
+  height: 505px;
+}
+
 @media screen and (max-width: $screen-md) {
   .ap-fullscreen {
     &::before {
       content: "";
-      background: #00000073;
+   
       position: absolute;
       bottom: 0;
       width: 100%;
@@ -62,4 +77,19 @@
   .ap-stroke {
     margin: 24px auto 0;
   }
+  .ap-fullscrenn__logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.ap-fullscreen {
+
+@each $key, $value in $fullscreen-colors {
+  &.ap-fullscreen--#{$key} {
+    background: map-deep-get($value, "background");
+
+  }
+}
+
 }
