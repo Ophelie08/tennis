@@ -1,7 +1,7 @@
 class Footer extends HTMLElement {
 
 	connectedCallback() {
-	 this.innerHTML = `<footer class="ap-footer bg--black padding-bottom--80">
+	 this.innerHTML = `<footer class="ap-footer bg--black padding-bottom--80 padding-top--80">
 		<div class="ap-container">
 			<div class="ap-grid">
 				<div class="ap-grid__column ap-grid__column--md--4"> <!-- de 0 à 991px on reste avec des colonnes de 100% puis à 992px les colonnes passent à 33.333% -->
