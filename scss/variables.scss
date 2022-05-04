@@ -23,11 +23,13 @@ $screen-xl: 1400px;
   --color-secondary-500: #646464;
   --color-secondary-400: #bebebe;
   --color-secondary-700: #0c262b;
+  --color-secondary-600: #152A42;
   --color-white: white;
   --color-black: black;
   --color-gold: #e8b533;
   --color-filter-before-secondary-700: linear-gradient(180deg, rgb(12 38 43 / 0%) 0%, #0c262b 100%);
   --color-filter-after-secondary-700: linear-gradient(270.17deg, rgb(0 0 0 / 0%) 22.37%, rgb(0 0 0 / 53%) 101.59%);
+  --color-filter-after-secondary-600: linear-gradient(180deg, rgba(21, 42, 66, 0) 0%, #152A42 100%);
   --color-filter-before-black: linear-gradient(180deg, rgb(0 0 0 / 0%) 41.04%, #000 87.21%);
   --color-filter-after-black: linear-gradient(270.42deg, rgb(0 0 0 / 37%) 50.94%, rgb(0 0 0 / 53%) 99.65%);
 

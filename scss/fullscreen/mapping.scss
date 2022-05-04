@@ -14,6 +14,14 @@ $fullscreen-colors: (
     after: (
       background: var(--color-filter-after-secondary-700),
     )
+  ),
+  secondary-600: (
+    before: (
+      background: var(--color-filter-before-secondary-700),
+    ),
+    after: (
+      background: var(--color-filter-after-secondary-600),
+    )
   )
 );
 
@@ -24,4 +32,7 @@ $fullscreen-sizes: (
   sm: (
     height: 505px,
   ),
+  xs: (
+    height: 247px,
+  )
 );
