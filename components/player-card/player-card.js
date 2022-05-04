@@ -22,7 +22,7 @@ class PlayerCard extends HTMLElement {
 		this._club = this.getAttribute('club');
 
 	 	this.innerHTML = `
-		 <div class="ap-player-card" style="background-image: url('${this._image}')">
+		 	<div class="ap-player-card" style="background-image: url('${this._image}')">
 				<div class="ap-player-card__content">
 					<h5 class="ap-heading ap-heading--h5 ap-heading--primary">${this._name}</h5>
 					<h5 class="ap-heading ap-heading--h5 ap-heading--primary"><img class="ap-flag" src="${this._flag}" alt="#" /> &nbsp;FR</h5>
