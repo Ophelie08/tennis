@@ -19,9 +19,9 @@ $screen-xl: 1400px;
   --font-icons-brands: "Font Awesome 6 Brands";
 
   //theme color
-  --color-primary-500: #E87CAA;
+  --color-primary-500: #e87caa;
   --color-secondary-500: #646464;
-  --color-secondary-400: #BEBEBE;
+  --color-secondary-400: #bebebe;
   --color-white: white;
   --color-black: black;
 
@@ -43,8 +43,6 @@ $screen-xl: 1400px;
 
   //heading H2
 
-
-
   //paragraph medium
   --font-size-medium: 1.6rem;
   --font-weight-regular: 600;
@@ -60,19 +58,17 @@ $screen-xl: 1400px;
   --font-weight-small: 600;
   --line-height-small: 20px;
 
-    //paragraph light
-    --font-size-light: 1.0rem;
-    --font-weight-light: 400;
-    --line-height-light: 20px;
+  //paragraph light
+  --font-size-light: 1rem;
+  --font-weight-light: 400;
+  --line-height-light: 20px;
 
   //parapraph large
   //paragraph extra large
 
-
   // button height
   --button-height-default: 48px;
   --button-height-small: 40px;
-
   --container-width: 1120px;
 
   @media screen and (max-width: $screen-lg) {
@@ -90,7 +86,7 @@ $screen-xl: 1400px;
     --font-weight-small: 600;
     --line-height-small: 20px;
 
-      //heading H4
+    //heading H4
     --font-size-h4: 1.8rem;
     --font-weight-h4: 700;
   }
