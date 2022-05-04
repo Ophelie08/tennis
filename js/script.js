@@ -16,12 +16,35 @@ document.addEventListener('DOMContentLoaded', () => {
 	if(document.querySelector('#playersArea')) {
 		const playersArea = document.querySelector('#playersArea');
 
+		[]
+		{}
+
+		[{}]
+
 		// Création d'un tableau [] d'objets {}.
 		// Un objet {} est un ensemble de propriétés
 		// Une propriété est l'association d'une clé et d'une valeur (image = clé et 'assets/images/balle-tennis.jpg' = valeur)
 		const players = [
 			{
 				image: 'assets/images/tennis-ball.jpg',
+				name: 'Reggianini Sarah',
+				nationality: 'FR',
+				flag: 'assets/images/flags/fr.jpg',
+				ranking: '# 15/1',
+				age: '16 ans',
+				club: 'T.C GUENANGE'
+			},
+			{
+				image: 'assets/images/balle-tennis.jpg',
+				name: 'Reggianini Sarah',
+				nationality: 'FR',
+				flag: 'assets/images/flags/fr.jpg',
+				ranking: '# 15/1',
+				age: '16 ans',
+				club: 'T.C GUENANGE'
+			},
+			{
+				image: 'assets/images/balle-tennis.jpg',
 				name: 'Reggianini Sarah',
 				nationality: 'FR',
 				flag: 'assets/images/flags/fr.jpg',
@@ -62,5 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// à l'intérieur de mon élément #playersArea je vais placer mon tableau de players
 		playersArea.innerHTML = playersElements.join('');
 	}
+
+
 })
 
