@@ -1,10 +1,10 @@
-.ap-logo-partenaire {
+.ap-logo__partners {
   width: 200px;
   margin: auto;
   padding-left: 10px;
 }
 
-.ap-logo__partenaire {
+.ap-logo__img--partners {
   margin-right: 6px;
 }
 
@@ -24,12 +24,12 @@
     }
   }
 
-  .ap-logo-partenaire {
+  .ap-logo__partners {
     width: 100%;
     padding-left: 0;
   }
 
-  .ap-logo__partenaire {
+  .ap-logo__img--partners {
     margin-right: 40px;
   }
 }
