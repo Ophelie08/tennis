@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// Une propriété est l'association d'une clé et d'une valeur (image = clé et 'assets/images/balle-tennis.jpg' = valeur)
 		const players = [
 			{
-				image: 'assets/images/balle-tennis.jpg',
+				image: 'assets/images/tennis-ball.jpg',
 				name: 'Reggianini Sarah',
 				nationality: 'FR',
 				flag: 'assets/images/flags/fr.jpg',
