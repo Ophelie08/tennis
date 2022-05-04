@@ -1,7 +1,7 @@
 .ap-grid {
-	display: flex;
-	margin: 0 -3.2rem;
-	flex-flow: wrap row;
+  display: flex;
+  margin: 0 -3.2rem;
+  flex-flow: wrap row;
 
   &__column {
     flex-shrink: 0;
@@ -24,7 +24,6 @@
     }
   }
 
-
   // Une fois qu'on arrive à 992px...
   @media (min-width: $screen-md) {
     // Cette classe va avoir pour effet de transformer les colonnes qui étaient initiallement à 100% en 33.3333%
@@ -44,6 +43,5 @@
       width: 25%;
       padding: 0 1.6rem;
     }
-
   }
 }

@@ -5,6 +5,7 @@ $colors: (
   gradient-primary-500-600: linear-gradient(95.37deg, var(--color-primary-500) 7.53%, var(--color-primary-600) 101.43%),
   "black": var(--color-black),
   "white": var(--color-white),
+  gold: var(--color-gold),
 );
 
 @each $key, $value in $colors {

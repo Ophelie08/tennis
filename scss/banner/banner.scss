@@ -1,21 +1,10 @@
-.banner--img {
-  display: none;
+.ap-banner__img {
+  display: flex;
+  flex-direction: column;
 }
 
-.banner--img--mobile {
-  display: block;
+.banner__img {
   width: 100%;
-}
-
-@media (min-width: $screen-md) {
-  .banner--img--mobile {
-    display: none;
-  }
-
-  .banner--img {
-    display: block;
-    width: 100%;
-  }
 }
 
 .banner--img--filter {
@@ -71,5 +60,14 @@
   .ap-logo__container {
     width: 175px;
     height: 175px;
+  }
+
+  .ap-banner__img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .banner__img {
+    width: 50%;
   }
 }
