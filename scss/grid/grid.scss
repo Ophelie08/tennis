@@ -1,8 +1,7 @@
 .ap-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
+	display: flex;
+	margin: 0 -3.2rem;
+	flex-flow: wrap row;
 
   &__column {
     flex-shrink: 0;
@@ -11,7 +10,6 @@
     padding: 0 3.2rem;
 
     i {
-      color: var(--color-white);
       margin-right: 8px;
     }
 
@@ -42,12 +40,14 @@
       width: 33.3333%;
     }
 
+    &__column--md--3 {
+      flex: 0 0 auto;
+      width: 25%;
+      padding: 0 1.6rem;
+    }
+
     &__text {
       max-width: 492px;
     }
-
-    display: flex;
-    margin: 0 -3.2rem;
-    flex-flow: wrap row;
   }
 }

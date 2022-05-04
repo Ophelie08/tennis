@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="module" src="/components/header/header.js"></script>
+		<script type="module" src="/components/footer/footer.js"></script>
+		<script type="module" src="/components/player-card/player-card.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<title>Document</title>
+	</head>
+
+	<body>
+		<ap-header selected="players"></ap-header>
+
+		<main>
+			<div class="ap-fullscreen ap-fullscreen--sm ap-fullscreen--secondary-700" style="background-image: url('assets/images/fond-joueuses.jpg');background-position: top;">
+				<div class="ap-container">
+					<h1 class="ap-heading ap-heading--h1 ap-heading--primary margin-bottom--24">Joueuses</h1>
+					<p class="ap-paragraph ap-paragraph--primary ap-paragraph--md">
+						Retrouvez toutes les joueuses de cette nouvelle saison 2022
+					</p>
+					<div class="ap-stroke"></div>
+				</div>
+			</div>
+
+			<section class="ap-section bg--secondary-700">
+				<div class="ap-container">
+					<div class="ap-grid" id="playersArea"></div>
+				</div>
+			</section>
+		</main>
+
+		<ap-footer></ap-footer>
+	</body>
+</html>

@@ -22,8 +22,13 @@ $screen-xl: 1400px;
   --color-primary-500: #e87caa;
   --color-secondary-500: #646464;
   --color-secondary-400: #bebebe;
+  --color-secondary-700: #0c262b;
   --color-white: white;
   --color-black: black;
+  --color-filter-before-secondary-700: linear-gradient(180deg, rgb(12 38 43 / 0%) 0%, #0c262b 100%);
+  --color-filter-after-secondary-700: linear-gradient(270.17deg, rgb(0 0 0 / 0%) 22.37%, rgb(0 0 0 / 53%) 101.59%);
+  --color-filter-before-black: linear-gradient(180deg, rgb(0 0 0 / 0%) 41.04%, #000 87.21%);
+  --color-filter-after-black: linear-gradient(270.42deg, rgb(0 0 0 / 37%) 50.94%, rgb(0 0 0 / 53%) 99.65%);
 
   //heading H1
   --font-size-h1: 6.4rem;
@@ -43,32 +48,27 @@ $screen-xl: 1400px;
 
   //heading H2
 
-  //paragraph medium
-  --font-size-medium: 1.6rem;
-  --font-weight-regular: 600;
-  --line-height-medium: 20px;
+  //paragraph md
+  --font-size-md: 1.6rem;
+  --font-weight-md: 600;
+  --line-height-md: 20px;
 
   //paragraph xs
   --font-size-xs: 1.2rem;
   --font-weight-xs: 400;
   --line-height-xs: 16px;
 
-  //pragraph small
-  --font-size-small: 1.4rem;
-  --font-weight-small: 600;
-  --line-height-small: 20px;
-
-  //paragraph light
-  --font-size-light: 1rem;
-  --font-weight-light: 400;
-  --line-height-light: 20px;
+  //pragraph sm
+  --font-size-sm: 1.4rem;
+  --font-weight-sm: 600;
+  --line-height-sm: 20px;
 
   //parapraph large
   //paragraph extra large
 
   // button height
   --button-height-default: 48px;
-  --button-height-small: 40px;
+  --button-height-sm: 40px;
   --container-width: 1120px;
 
   @media screen and (max-width: $screen-lg) {
@@ -77,14 +77,14 @@ $screen-xl: 1400px;
     --font-weight-h1: 900;
 
     //paragraph medium
-    --font-size-medium: 1.4rem;
-    --font-weight-regular: 400;
-    --line-height-medium: 17px;
+    //--font-size-medium: 1.4rem;
+    //--font-weight-regular: 400;
+    //--line-height-medium: 17px;
 
     //pragraph small
-    --font-size-small: 1.2rem;
-    --font-weight-small: 600;
-    --line-height-small: 20px;
+    //--font-size-small: 1.2rem;
+    //--font-weight-small: 600;
+    //--line-height-small: 20px;
 
     //heading H4
     --font-size-h4: 1.8rem;

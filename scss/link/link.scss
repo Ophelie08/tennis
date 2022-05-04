@@ -1,0 +1,20 @@
+@import "mapping";
+
+.ap-link {
+  font-family: var(--text-font);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 20px;
+
+  @each $key, $value in $link-colors {
+    &.ap-link--#{$key} {
+      color: map-deep-get($value, "color");
+
+      @media (hover: hover) {
+        &:hover {
+          color: map-deep-get($value, "hover", "color");
+        }
+      }
+    }
+  }
+}

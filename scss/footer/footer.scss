@@ -11,11 +11,7 @@
 .ap-logo-social-network {
   display: flex;
   justify-content: center;
-}
-
-.link-ap {
-  color: #c42821;
-  text-decoration: none;
+  color: var(--color-white);
 }
 
 @media (min-width: $screen-md) {

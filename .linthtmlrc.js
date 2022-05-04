@@ -1,18 +1,6 @@
 module.exports = {
 	"maxerr": false,
 	"raw-ignore-regex": false,
-	"attr-bans": [
-		"align",
-		"background",
-		"bgcolor",
-		"border",
-		"frameborder",
-		"longdesc",
-		"marginwidth",
-		"marginheight",
-		"scrolling",
-		"width"
-	],
 	"indent-style": "tabs",
 	"indent-width": 1,
 	"spec-char-escape": false,

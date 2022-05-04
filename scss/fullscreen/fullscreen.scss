@@ -1,8 +1,9 @@
+@import "mapping";
+
 .ap-fullscreen {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -12,7 +13,6 @@
   &::before {
     content: "";
     z-index: -1;
-    background: linear-gradient(0deg, var(--color-black) 0, rgb(255 255 255 / 0%) 100%);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -21,13 +21,39 @@
 
   &::after {
     content: "";
-    background: linear-gradient(90deg, rgb(0 0 0 / 100%) 0%, rgb(255 255 255 / 0%) 20%);
     position: absolute;
     left: 0;
     width: 100%;
     top: 0;
     height: 100%;
     z-index: -1;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+      height: 103px;
+    }
+  }
+
+  @each $key, $value in $fullscreen-colors {
+    &.ap-fullscreen--#{$key} {
+      &::before {
+        background: map-deep-get($value, "before", "background");
+      }
+
+      &::after {
+        background: map-deep-get($value, "after", "background");
+      }
+    }
+  }
+
+  @each $key, $value in $fullscreen-sizes {
+    &.ap-fullscreen--#{$key} {
+      height: map-get($value, "height");
+    }
   }
 }
 
@@ -42,7 +68,6 @@
   .ap-fullscreen {
     &::before {
       content: "";
-      background: #00000073;
       position: absolute;
       bottom: 0;
       width: 100%;
@@ -61,5 +86,10 @@
 
   .ap-stroke {
     margin: 24px auto 0;
+  }
+
+  .ap-fullscrenn__logo {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -1,0 +1,14 @@
+$link-colors: (
+  "white": (
+    color: var(--color-white),
+    hover: (
+      color: var(--color-primary-500),
+    ),
+  ),
+  ap: (
+    color: var(--color-white),
+    hover: (
+      color: #c42821,
+    ),
+  ),
+);
