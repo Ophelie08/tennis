@@ -6,7 +6,7 @@
     "lint": "npm run lint:sass && npm run lint:html",
     "prepare": "husky install",
     "server": "nodemon server.js",
-		"start": "browser-sync start --config bs-config.js && npm run sass:watch"
+		"start": "browser-sync start --config bs-config.js"
   },
   "devDependencies": {
     "@linthtml/linthtml": "^0.8.6",
