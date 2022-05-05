@@ -1,4 +1,4 @@
-.ap-card-winner {
+.ap-winner-card {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,5 +23,9 @@
     left: 0;
     top: 0;
     z-index: -1;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    padding: 16px;
   }
 }

@@ -16,7 +16,7 @@ class WinnerCard extends HTMLElement {
 		this._secondPlace = this.getAttribute('secondPlace');
 
 	 	this.innerHTML = `
-        	<div class="ap-card-winner" style="background-image: url('${this._image}')">
+        	<div class="ap-winner-card" style="background-image: url('${this._image}')">
             	<h3 class="ap-heading ap-heading--h3 ap-heading--primary font-weight-400">${this._date}</h3>
             	<h4 class="ap-heading ap-heading--h4 ap-heading--primary margin-top--64"><i class="fa-solid fa-trophy color--gold"></i>${this._firstPlace}</h4>
             	<h5 class="ap-heading ap-heading--h5 ap-heading--primary margin-top--16"><i class="fa-solid fa-trophy"></i>${this._secondPlace}</h5>
@@ -25,4 +25,4 @@ class WinnerCard extends HTMLElement {
 	}
 }
 
-customElements.define('ap-player-card', PlayerCard);
+customElements.define('ap-winner-card', WinnerCard);
