@@ -3,19 +3,23 @@
   margin: 0 -3.2rem;
   flex-flow: wrap row;
 
+  &--align-items {
+    &--center {
+      align-items: center;
+    }
+  }
+
+  &--justify-content {
+    &--sb {
+      justify-content: space-between;
+    }
+  }
+
   &__column {
     flex-shrink: 0;
     width: 100%; // Par défault, toutes les colonnes que je vais placer vont faire 100% de large
     max-width: 100%;
     padding: 0 3.2rem;
-
-    i {
-      margin-right: 8px;
-    }
-
-    &--img {
-      border-radius: 16px;
-    }
 
     // Sauf si j'utilise une classe modifier
     &--4 {
@@ -31,6 +35,11 @@
     &__column--md--4 {
       flex: 0 0 auto;
       width: 33.3333%;
+    }
+
+    &__column--md--5 {
+      flex: 0 0 auto;
+      width: 40%;
     }
 
     &__column--md--6 {

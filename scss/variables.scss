@@ -25,9 +25,13 @@ $screen-xl: 1400px;
   --color-secondary-400: #bebebe;
   --color-secondary-700: #0c262b;
   --color-secondary-600: #152a42;
+
   --color-white: white;
   --color-black: black;
   --color-gold: #e8b533;
+
+  --color-grey-500: #3D3D3D;
+
   --color-filter-before-secondary-700: linear-gradient(270.17deg, rgb(0 0 0 / 0%) 22.37%, rgb(0 0 0 / 53%) 101.59%);
   --color-filter-after-secondary-700: linear-gradient(180deg, rgb(12 38 43 / 0%) 0%, #0c262b 100%);
   --color-filter-after-secondary-600: linear-gradient(180deg, rgb(21 42 66 / 0%) 0%, #152a42 100%);
@@ -37,6 +41,8 @@ $screen-xl: 1400px;
   //heading H1
   --font-size-h1: 6.4rem;
   --font-weight-h1: 900;
+
+  //heading H2
 
   //heading H3
   --font-size-h3: 3.2rem;
@@ -50,27 +56,26 @@ $screen-xl: 1400px;
   --font-size-h5: 1.6rem;
   --font-weight-h5: 600;
 
-  //heading H2
+  //parapraph large
+  --font-size-lg: 2rem;
+  --font-weight-lg: 600;
+  --line-height-lg: 25px;
 
   //paragraph md
   --font-size-md: 1.6rem;
   --font-weight-md: 600;
   --line-height-md: 20px;
 
-  //paragraph xs
-  --font-size-xs: 1.2rem;
-  --font-weight-xs: 400;
-  --line-height-xs: 16px;
-
   //pragraph sm
   --font-size-sm: 1.4rem;
   --font-weight-sm: 600;
   --line-height-sm: 20px;
 
-  //parapraph large
-  --font-size-lg: 2rem;
-  --font-weight-lg: 600;
-  --line-height-lg: 25px;
+  //paragraph xs
+  --font-size-xs: 1.2rem;
+  --font-weight-xs: 400;
+  --line-height-xs: 16px;
+
 
   //paragraph extra large
 

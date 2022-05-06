@@ -7,10 +7,10 @@
 @import "utils/margin";
 @import "header/header";
 @import "button/button";
-@import "winner-card/winner-card.scss";
+@import "winner-card/winner-card";
 @import "article/article";
 @import "grid/grid";
-@import "tab/tab.scss";
+@import "tab/tab";
 @import "banner/banner";
 @import "utils/colors";
 @import "utils/text";
@@ -24,7 +24,8 @@
 @import "fullscreen/fullscreen";
 @import "player-card/player-card";
 @import "footer/footer";
-@import "utils/font-weight.scss";
+@import "group/group";
+@import "utils/font-weight";
 
 * {
   box-sizing: border-box;

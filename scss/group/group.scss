@@ -1,0 +1,84 @@
+$component: ap-group;
+
+.#{$component} {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    position: relative;
+    margin-bottom: 3.2rem;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 54%;
+      right: -20px;
+      width: 21px;
+      height: 0;
+      margin-top: -1px;
+      border-top: 1px solid #ffffff;
+    }
+
+    &:first-child:before {
+      position: absolute;
+      content: "";
+      top: 54%;
+      right: -20px;
+      width: 0;
+      height: 160px;
+      margin-top: -1px;
+      border-left: 1px solid #ffffff;
+    }
+  }
+  
+
+  &__item {
+    border-radius: 1.6rem 1.6rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-grey-500);
+    height: 6.4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0 1.2rem;
+
+    &--winner {
+      background-color: var(--color-primary-500);
+    }
+
+    p {
+      text-align: left!important;
+    }
+
+    &:last-child { 
+      border-radius: 0 0 1.6rem 1.6rem; 
+      border-bottom: 0;
+    }
+
+    &__left {
+      display: flex;
+    }
+
+    &__right {
+      display: flex;
+
+      & > .ap-paragraph {
+        margin-left: 2.4rem;
+      }
+    }
+
+    &__infos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__image {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 10rem;
+      overflow: hidden;
+      margin-right: 1.6rem;
+    }
+  }
+}

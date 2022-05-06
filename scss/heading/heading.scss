@@ -11,7 +11,7 @@
     }
   }
 
-  @each $key, $value in $headingcolors {
+  @each $key, $value in $heading-colors {
     &.ap-heading--#{$key} {
       color: map-get($value, "color");
     }
