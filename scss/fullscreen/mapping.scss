@@ -28,11 +28,23 @@ $fullscreen-colors: (
 $fullscreen-sizes: (
   default: (
     height: 100vh,
+    mobile: (
+      height: 100vh,
+      padding-top: 0
+    )
   ),
   sm: (
     height: 505px,
+    mobile: (
+      height: 250px,
+      padding-top: 64px
+    )
   ),
   xs: (
     height: 247px,
+    mobile: (
+      height: 247px,
+      padding-top: 64px
+    )
   )
 );

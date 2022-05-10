@@ -5,6 +5,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 20px;
+  transition: 0.3s ease-in;
 
   @each $key, $value in $link-colors {
     &.ap-link--#{$key} {

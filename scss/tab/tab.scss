@@ -1,32 +1,30 @@
 .ap-tabs {
-  display: flex;
-  background-color: var(--color-black);
+  display: grid;
   border-radius: 16px;
   align-items: center;
-  justify-content: space-between;
   overflow: hidden;
-
-  &__li {
-    padding: 20px 43px;
-
-    &:hover {
-      background-color: var(--color-primary-500);
-    }
-
-    &--selected {
-      background-color: var(--color-primary-500);
-      padding: 20px 43px;
-      flex: 1;
-    }
-  }
+  grid-template-columns: repeat(4, 1fr);
 
   &__button {
     font-family: var(--text-font);
     font-size: var(--font-size-lg);
     color: var(--color-white);
     border: 0;
-    background-color: transparent;
+    background-color: var(--color-black);
     cursor: pointer;
+    transition: 0.3s ease-in;
+    padding: 20px 43px;
+    width: 100%;
+    white-space: nowrap;
+
+    &--selected {
+        background-color: var(--color-primary-500);
+ 
+    }
+
+    &:hover {
+        background-color: var(--color-primary-500);
+    }
   }
 
   &-mobile {
