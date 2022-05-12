@@ -52,11 +52,17 @@ class Header extends HTMLElement {
 						</a>
 					</li>
 					<li class="ap-header__nav__li">
-						<a class="ap-header__nav__link" target="_blank" href="https://www.youtube.com/channel/UC5cSlOClwHK6FaAH13OU-tw">
+						<a class="ap-header__nav__link" href="index.html#live">
 							<i class="fa-brands fa-youtube fa-lg"></i>
 							<span>Matchs en live</span>
 						</a>
 					</li>
+					<li class="ap-header__nav__li">
+					<a class="ap-header__nav__link" target="_blank" href="https://www.youtube.com/channel/UC5cSlOClwHK6FaAH13OU-tw">
+						<i class="fa-solid fa-video fa-lg"></i>
+						<span>Tous les matchs</span>
+					</a>
+				</li>
 				</ul>
 			</nav>
 		</header>

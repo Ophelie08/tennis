@@ -49,3 +49,18 @@ a {
 .ap-flag {
   border-radius: 100px;
 }
+
+.ap-tennis-live { 
+  overflow: hidden; 
+  padding-bottom: 56.25%; 
+  position: relative; 
+  height: 0;
+}
+
+.ap-tennis-live iframe { 
+  left: 0; 
+  top: 0; 
+  height: 100%; 
+  width: 100%; 
+  position: absolute;
+}
