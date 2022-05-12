@@ -10,7 +10,7 @@
 @import "winner-card/winner-card";
 @import "article/article";
 @import "grid/grid";
-@import "tab/tab";
+@import "tabs/tabs";
 @import "banner/banner";
 @import "utils/colors";
 @import "utils/text";
@@ -26,6 +26,7 @@
 @import "footer/footer";
 @import "group/group";
 @import "utils/font-weight";
+@import "badge/badge";
 
 * {
   box-sizing: border-box;

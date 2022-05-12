@@ -8,6 +8,7 @@
 
 		<script type="module" src="/components/header/header.js"></script>
 		<script type="module" src="/components/footer/footer.js"></script>
+		<script type="module" src="/components/group-card/group-card.js"></script>
 		<script type="text/javascript" src="/js/script.js"></script>
 		<title>Tableau des scores</title>
 	</head>
@@ -26,152 +27,92 @@
 
 			<section class="ap-section bg--secondary-600">
 				<div class="ap-container">
-
 					<div class="margin-bottom--80">
 						<div class="ap-tabs-desktop">
 							<ul class="ap-tabs">
-								<li class="ap-tabs__li--selected"><button class="ap-tabs__button">1/16 Finale - 1/8 Finale</button></li>
-								<li class="ap-tabs__li"><button class="ap-tabs__button">1/8 Finale - 1/4 Finale</button></li>
-								<li class="ap-tabs__li"><button class="ap-tabs__button">1/4 Finale - 1/2 Finale</button></li>
-								<li class="ap-tabs__li"><button class="ap-tabs__button">1/2 Finale - Finale</button></li>
+								<li class="ap-tabs__li ap-tabs__li--selected"><button class="ap-tabs__button" data-nav="matchs-16-8">1/16 Finale - 1/8 Finale</button></li>
+								<li class="ap-tabs__li"><button class="ap-tabs__button" data-nav="matchs-8-4">1/8 Finale - 1/4 Finale</button></li>
+								<li class="ap-tabs__li"><button class="ap-tabs__button" data-nav="matchs-4-2">1/4 Finale - 1/2 Finale</button></li>
+								<li class="ap-tabs__li"><button class="ap-tabs__button" data-nav="matchs-2-1">1/2 Finale - Finale</button></li>
 							</ul>
 						</div>
 						<div class="ap-tabs-mobile">
-							<select>
-								<option value="first">1/16 Finale - 1/8 Finale</option>
-								<option value="second">1/8 Finale - 1/4 Finale</option>
-								<option value="third">1/4 Finale - 1/2 Finale</option>
-								<option value="final">1/2 Finale - Finale</option>
+							<select id="selectMatchsMobile">
+								<option value="16-finale" selected>1/16 Finale</option>
+								<option value="8-finale">1/8 Finale</option>
+								<option value="4-finale">1/4 Finale</option>
+								<option value="2-finale">1/2 Finale</option>
+								<option value="finale">Finale</option>
 							</select>
 						</div>
 					</div>
 
+					<!-- Matchs (mobile only) -->
+					<div class="ap-matches ap-matches--mobile js-matchs" id="matchs-mobile">
+						<div class="js-matchs-mobile"></div>
+					</div>
 
-					<div class="ap-matches">
+					<!-- Seizièmes de finale / Huitièmes de finale -->
+					<div class="ap-matches ap-matches--visible js-matchs" id="matchs-16-8">
 						<div class="ap-matches__left">
-							<h2 class="ap-heading ap-heading--h3 color--white text--center">1/16 Finale</h2>
-							
-							<ul class="ap-group">
-								<li>
-									<div class="ap-group__item ap-group__item--winner">
-										<div class="ap-group__item__left">
-											<div class="ap-group__item__image">
-												<img src="assets/images/tennis-ball.jpg" alt="" />
-											</div>
-											<div class="ap-group__item__infos">
-												<p class="ap-paragraph ap-paragraph--xs color--white">#N14 (WTA 338)</p>
-												<p class="ap-paragraph ap-paragraph--sm color--white">YEROLYMOS Margot</p>
-											</div>
-										</div>
-										<div class="ap-group__item__right">
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-										</div>
-									</div>
-									<div class="ap-group__item">
-										<div class="ap-group__item__left">
-											<div class="ap-group__item__image">
-												<img src="assets/images/tennis-ball.jpg" alt="" />
-											</div>
-											<div class="ap-group__item__infos">
-												<p class="ap-paragraph ap-paragraph--xs color--white">#N14 (WTA 338)</p>
-												<p class="ap-paragraph ap-paragraph--sm color--white">YEROLYMOS Margot</p>
-											</div>
-										</div>
-										<div class="ap-group__item__right">
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-										</div>
-									</div>
-								</li>
-	
-								<li>
-									<div class="ap-group__item ap-group__item--winner">
-										<div class="ap-group__item__left">
-											<div class="ap-group__item__image">
-												<img src="assets/images/tennis-ball.jpg" alt="" />
-											</div>
-											<div class="ap-group__item__infos">
-												<p class="ap-paragraph ap-paragraph--xs color--white">#N14 (WTA 338)</p>
-												<p class="ap-paragraph ap-paragraph--sm color--white">YEROLYMOS Margot</p>
-											</div>
-										</div>
-										<div class="ap-group__item__right">
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-										</div>
-									</div>
-									<div class="ap-group__item">
-										<div class="ap-group__item__left">
-											<div class="ap-group__item__image">
-												<img src="assets/images/tennis-ball.jpg" alt="" />
-											</div>
-											<div class="ap-group__item__infos">
-												<p class="ap-paragraph ap-paragraph--xs color--white">#N14 (WTA 338)</p>
-												<p class="ap-paragraph ap-paragraph--sm color--white">YEROLYMOS Margot</p>
-											</div>
-										</div>
-										<div class="ap-group__item__right">
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
+							<h2 class="ap-heading ap-heading--h3 color--white text--center margin-bottom--24">1/16 Finale</h2>
 
+							<div class="js-matchs-16"></div>
+						</div>
 
 						<div class="ap-matches__right">
-							<h2 class="ap-heading ap-heading--h3 color--white text--center">1/8 Finale</h2>
-							
-							<ul class="ap-group">
-								<li>
-									<div class="ap-group__item ap-group__item--winner">
-										<div class="ap-group__item__left">
-											<div class="ap-group__item__image">
-												<img src="assets/images/tennis-ball.jpg" alt="" />
-											</div>
-											<div class="ap-group__item__infos">
-												<p class="ap-paragraph ap-paragraph--xs color--white">#N14 (WTA 338)</p>
-												<p class="ap-paragraph ap-paragraph--sm color--white">YEROLYMOS Margot</p>
-											</div>
-										</div>
-										<div class="ap-group__item__right">
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-										</div>
-									</div>
-									<div class="ap-group__item">
-										<div class="ap-group__item__left">
-											<div class="ap-group__item__image">
-												<img src="assets/images/tennis-ball.jpg" alt="" />
-											</div>
-											<div class="ap-group__item__infos">
-												<p class="ap-paragraph ap-paragraph--xs color--white">#N14 (WTA 338)</p>
-												<p class="ap-paragraph ap-paragraph--sm color--white">YEROLYMOS Margot</p>
-											</div>
-										</div>
-										<div class="ap-group__item__right">
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-											<p class="ap-paragraph ap-paragraph--sm color--white">2</p>
-										</div>
-									</div>
-								</li>
-							</ul>
+							<h2 class="ap-heading ap-heading--h3 color--white text--center margin-bottom--24">1/8 Finale</h2>
+
+							<div class="js-matchs-8"></div>
 						</div>
 					</div>
-					
 
-					
+					<!-- Huitièmes de finale / Quart de finale -->
+					<div class="ap-matches js-matchs" id="matchs-8-4">
+						<div class="ap-matches__left">
+							<h2 class="ap-heading ap-heading--h3 color--white text--center margin-bottom--24">1/8 Finale</h2>
+
+							<div class="js-matchs-8"></div>
+						</div>
+
+						<div class="ap-matches__right">
+							<h2 class="ap-heading ap-heading--h3 color--white text--center margin-bottom--24">1/4 Finale</h2>
+
+							<div class="js-matchs-4"></div>
+						</div>
+					</div>
+
+					<!-- Quarts de finale / demi finale -->
+					<div class="ap-matches js-matchs" id="matchs-4-2">
+						<div class="ap-matches__left">
+							<h2 class="ap-heading ap-heading--h3 color--white text--center margin-bottom--24">1/4 Finale</h2>
+
+							<div class="js-matchs-4"></div>
+						</div>
+
+						<div class="ap-matches__right">
+							<h2 class="ap-heading ap-heading--h3 color--white text--center margin-bottom--24">1/2 Finale</h2>
+
+							<div class="js-matchs-2"></div>
+						</div>
+					</div>
+
+					<!-- Demi finale / Finale -->
+					<div class="ap-matches js-matchs" id="matchs-2-1">
+						<div class="ap-matches__left">
+							<h2 class="ap-heading ap-heading--h3 color--white text--center margin-bottom--24">1/2 Finale</h2>
+
+							<div class="js-matchs-2"></div>
+						</div>
+
+						<div class="ap-matches__right">
+							<h2 class="ap-heading ap-heading--h3 color--white text--center margin-bottom--24">Finale</h2>
+
+							<div class="js-matchs-1"></div>
+						</div>
+					</div>
 				</div>
 			</section>
-
 		</main>
 		<ap-footer></ap-footer>
 	</body>

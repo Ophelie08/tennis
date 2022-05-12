@@ -58,7 +58,12 @@
     transform: scale(0.95);
     opacity: 0;
     pointer-events: none;
+    z-index: -1;
     transition: 0.3s ease-in;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
 
     &__li {
       font-size: 2rem;
@@ -115,6 +120,7 @@
       margin-top: 0;
       background-color: transparent;
       justify-content: start;
+      visibility: visible;
 
       &__ul {
         width: 100%;
@@ -197,6 +203,8 @@ body.show-nav {
   .ap-header__nav {
     transform: scale(1);
     opacity: 1;
+    visibility: visible;
+    z-index: 0;
     pointer-events: all;
   }
 

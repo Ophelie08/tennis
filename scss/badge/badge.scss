@@ -1,0 +1,19 @@
+$component: ap-badge;
+
+@import "mapping";
+
+.#{$component} {
+  border-radius: 100px;
+  height: 2.4rem;
+  min-width: 2.4rem;
+  padding: 0 0.8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  @each $key, $value in $badge-colors {
+    &.#{$component}--#{$key} {
+      background-color: map-deep-get($value, "background-color");
+    }
+  }
+}
