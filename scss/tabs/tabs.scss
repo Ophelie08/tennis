@@ -1,6 +1,5 @@
 .ap-tabs {
-  display: flex;
-  background-color: var(--color-black);
+  display: grid;
   border-radius: 16px;
   align-items: center;
   overflow: hidden;
@@ -26,7 +25,7 @@
     font-size: var(--font-size-md);
     color: var(--color-white);
     border: 0;
-    background-color: transparent;
+    background-color: var(--color-black);
     cursor: pointer;
     white-space: nowrap;
     height: 100%;

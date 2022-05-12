@@ -53,6 +53,11 @@
   @each $key, $value in $fullscreen-sizes {
     &.ap-fullscreen--#{$key} {
       height: map-get($value, "height");
+
+      @media screen and (max-width: $screen-md) {
+        height: map-deep-get($value, "mobile", "height");
+        padding-top: map-deep-get($value, "mobile", "padding-top");
+      }
     }
   }
 }
@@ -82,6 +87,11 @@
   .ap-heading,
   .ap-paragraph {
     text-align: center;
+  }
+
+  .ap-fullscreen__logo {
+    display: flex;
+    justify-content: center;
   }
 
   .ap-stroke {

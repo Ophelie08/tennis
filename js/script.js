@@ -563,22 +563,21 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 
+	if(document.querySelector('.js-matchs-mobile')) {
+		const mobileMatchsContainer = document.querySelector('.js-matchs-mobile');
+		const selectMobile = document.querySelector('#selectMatchsMobile');
 
-	const mobileMatchsContainer = document.querySelector('.js-matchs-mobile')
-	const selectMobile = document.querySelector('#selectMatchsMobile');
+		mobileMatchsContainer.innerHTML = matchs16Array.join('');
 
-	mobileMatchsContainer.innerHTML = matchs16Array.join('');
+		selectMobile.addEventListener('change', (event) => {
+			const selectedValue = selectMobile.options[selectMobile.selectedIndex].value;
 
-	selectMobile.addEventListener('change', (event) => {
-		const selectedValue = selectMobile.options[selectMobile.selectedIndex].value;
-
-		switch(selectedValue) {
-			case '16-finale': mobileMatchsContainer.innerHTML = matchs16Array.join('');
-			case '8-finale': mobileMatchsContainer.innerHTML = matchs8Array.join('');
-			case '4-finale': mobileMatchsContainer.innerHTML = matchs4Array.join('');
-		}
-
-
-	})
+			switch(selectedValue) {
+				case '16-finale': mobileMatchsContainer.innerHTML = matchs16Array.join('');
+				case '8-finale': mobileMatchsContainer.innerHTML = matchs8Array.join('');
+				case '4-finale': mobileMatchsContainer.innerHTML = matchs4Array.join('');
+			}
+		})
+	}
 })
 

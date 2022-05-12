@@ -26,6 +26,11 @@
   }
 
   @media screen and (max-width: $screen-md) {
-    padding: 16px;
+    padding: 24px;
+    height: 100%;
+
+    .ap-heading {
+      text-align: left;
+    }
   }
 }

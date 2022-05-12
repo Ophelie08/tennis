@@ -1,0 +1,119 @@
+.ap-timeline-container {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 90%;
+    margin-top: 33px;
+    background-color: #ffffff36;
+  }
+
+  &__row {
+    margin-bottom: 40px;
+    display: flex;
+
+    @media screen and (min-width: $screen-md) {
+      &:nth-child(even) {
+        justify-content: flex-end;
+
+        .ap-timeline {
+          &::before {
+            right: auto;
+            left: -5%;
+            transform: translateY(-50%) rotate(180deg);
+          }
+
+          &::after {
+            right: auto;
+            left: -55px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ap-timeline {
+  background-color: var(--color-black);
+  border-radius: 16px;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  position: relative;
+
+  &__left,
+  &__right {
+    padding: 16px;
+  }
+
+  &__right {
+    border-left: 1px solid #ffffff36;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 7px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 16px solid black;
+    right: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media screen and (min-width: $screen-md) {
+    &::after {
+      content: "";
+      position: absolute;
+      right: -55px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 9px;
+      height: 9px;
+      border-radius: 20px;
+      background: var(--color-primary-500);
+    }
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .ap-timeline-container {
+    width: 100%;
+  }
+
+  .ap-timeline {
+    width: 100%;
+
+    &::before {
+      right: 50%;
+      bottom: -16px;
+      transform: rotate(90deg) translateY(-50%);
+      top: auto;
+    }
+  }
+
+  .ap-timeline__left .ap-heading {
+    text-align: left !important;
+  }
+
+  .ap-timeline__left .ap-paragraph {
+    text-align: left !important;
+  }
+
+  .ap-timeline-container__row:last-child .ap-timeline {
+    &::before {
+      display: none;
+    }
+  }
+
+  .ap-timeline-container__row:last-child {
+    margin-bottom: 0;
+  }
+}
