@@ -1,5 +1,5 @@
 .ap-tabs {
-  display: grid;
+  display: flex;
   border-radius: 16px;
   align-items: center;
   overflow: hidden;
@@ -9,13 +9,13 @@
     height: 56px;
     text-align: center;
     transition: 0.2s;
+		background-color: var(--color-black);
 
     &:not(:last-child) {
       border-right: 1px solid rgb(255 255 255 / 20%);
     }
 
-    &:hover,
-    &--selected {
+    &:hover, &--selected {
       background-color: var(--color-primary-500);
     }
   }
@@ -25,7 +25,7 @@
     font-size: var(--font-size-md);
     color: var(--color-white);
     border: 0;
-    background-color: var(--color-black);
+    background-color: transparent;
     cursor: pointer;
     white-space: nowrap;
     height: 100%;

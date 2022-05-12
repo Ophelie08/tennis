@@ -151,9 +151,17 @@ $component: ap-group;
 }
 
 @media (min-width: $screen-sm) {
-  .ap-matches--visible {
-    display: flex;
-  }
+	.ap-matches {
+		display: none;
+
+		&--visible {
+			display: flex;
+		}
+
+		&--mobile {
+			display: none;
+		}
+	}
 
   .ap-group--hidden {
     visibility: hidden;

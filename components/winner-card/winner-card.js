@@ -12,8 +12,8 @@ class WinnerCard extends HTMLElement {
 	connectedCallback() {
 		this._image = this.getAttribute('image');
 		this._date = this.getAttribute('date');
-		this._firstPlace = this.getAttribute('firstPlace');
-		this._secondPlace = this.getAttribute('secondPlace');
+		this._firstPlace = this.getAttribute('first-place');
+		this._secondPlace = this.getAttribute('second-place');
 
 	 	this.innerHTML = `
         	<div class="ap-winner-card" style="background-image: url('${this._image}')">
