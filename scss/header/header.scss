@@ -8,7 +8,7 @@
   &__bar {
     height: 6.4rem;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     background-color: #00000070;
     padding: 0 1.6rem;
     display: flex;
@@ -102,7 +102,7 @@
       display: block;
       padding: 6.4rem 0 0;
       position: absolute;
-      z-index: 0;
+      z-index: -1;
       width: 8rem;
       border-right: 1px solid transparent;
       background-color: transparent;

@@ -11,7 +11,7 @@ class Header extends HTMLElement {
 
 	 	this.innerHTML = `<header class="ap-header">
 			<div class="ap-header__bar">
-				<img class="ap-header__logo" src="assets/images/logo.svg" alt="logo waop" />
+			<a class="ap-link__logo" href="index.html"><img class="ap-header__logo" src="assets/images/logo.svg" alt="logo waop" /></a>
 				<div class="ap-burger" id="burger">
 					<div class="ap-burger__line"></div>
 					<div class="ap-burger__line"></div>
